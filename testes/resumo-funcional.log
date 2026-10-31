@@ -8,8 +8,8 @@
 |04|Aprovado: 5 verificações reais|4|
 |05|Aprovado: 3 verificações reais|3|
 |06|Aprovado: 3 verificações reais|2|
-|07|Não executado até este resumo|0|
+|07|Aprovado: 5 verificações reais|4|
 |08|Não executado até este resumo|0|
 
-Total: **15 verificações de interface aprovadas e 12 PNG reais**. As 15 verificações Java de regras são um conjunto separado. Relatório 1 ainda requer print da IDE Android Studio; Flutter 3 e 8 continuam pendentes de SDK e execução.
+Total: **20 verificações de interface aprovadas e 16 PNG reais**. As 15 verificações Java de regras são um conjunto separado. Relatório 1 ainda requer print da IDE Android Studio; Flutter 3 e 8 continuam pendentes de SDK e execução.
 

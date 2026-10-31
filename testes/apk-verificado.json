@@ -1,0 +1,7 @@
+{
+  "apk": "artefatos/unip-mobile-debug.apk",
+  "sha256": "41b3b6563ebd1698a8c16379e6de144d0ab143015d76e114d79dfb07698837be",
+  "origem": "APK instalado e testado no emulador API 30",
+  "comparacao_build_atual": "classes.dex, resources.arsc e AndroidManifest.xml idênticos",
+  "observacao": "Chaves locais de depuração podem mudar a assinatura entre máquinas; a cópia entregue é a efetivamente testada."
+}

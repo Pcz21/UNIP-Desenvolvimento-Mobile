@@ -7,7 +7,7 @@ Leitura integral: Roteiro.dev.mobile.pdf (17 páginas) e Relatório.dev.mobile.p
 - [ ] Identificação: nome, RA, polo e local reais, a preencher; não declarar presença ou datas acadêmicas não informadas.
 - [ ] R1: 1–2 páginas; R2–R8: 2–3 páginas; teoria, prática, códigos, referências ABNT e conclusões específicas.
 - [ ] Evidências autênticas incorporadas e legendadas imediatamente; sem captura, usar EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA.
-- [ ] Oito DOCX/PDF, consolidado com capa, códigos completos separados, testes e guia de laboratório.
+- [x] Oito DOCX/PDF, consolidado com capa, códigos completos separados, testes e guia de laboratório.
 - [ ] Conferir páginas/imagens/abertura e salvar no GitHub.
 
 Os documentos também preveem redução proporcional de nota por atraso ou descumprimento dos requisitos mínimos. Prazo institucional: [NÃO INFORMADO — confirmar com o docente]. O roteiro 3 menciona criatividade/aprimoramentos no modelo de avaliação; a implementação acrescenta tema, rolagem, rótulos e tratamento local de entrada. Os recursos de aula (projetor/compartilhamento de tela no roteiro 1) não constituem evidência de presença e não foram presumidos.

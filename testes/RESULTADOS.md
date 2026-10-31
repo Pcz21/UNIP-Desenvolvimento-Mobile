@@ -13,7 +13,7 @@
 
 ## Execução Android
 
-O emulador API 30 x86_64 executa por software, sem `/dev/kvm`. O boot levou aproximadamente 402 segundos. Houve uma primeira falha por aviso de lentidão do System UI; ela não foi contada como sucesso. Após escolher aguardar e estabilizar, passaram a tela inicial, o login XML, a navegação do menu, os três casos de CheckBox e a persistência real após forçar parada. As capturas estão incorporadas nos documentos de cada atividade. A validação é registrada separadamente ao concluir os cenários. Consulte `android-funcional-tentativas.md`.
+O emulador API 30 x86_64 executa por software, sem `/dev/kvm`. O boot levou aproximadamente 402 segundos. Houve uma primeira falha por aviso de lentidão do System UI; ela não foi contada como sucesso. Após escolher aguardar e estabilizar, passaram a tela inicial, o login XML, a navegação do menu, os três casos de CheckBox e a persistência real após forçar parada. As capturas estão incorporadas nos documentos de cada atividade. As cinco verificações da tela de validação também foram aprovadas: e-mail obrigatório, senha obrigatória, e-mail inválido, senha curta e dados válidos. Consulte `android-funcional-tentativas.md`.
 
 Cada teste funcional concluído gera `android-funcional-NN.json` com os resultados conferidos via UI Automator. Os PNG só são gravados após a presença do texto esperado na árvore da tela. Os arquivos JSON e `CHECKLIST_GERAL.md` são a fonte para as quantidades finais de testes e capturas. A presença apenas de um arquivo de teste não representa aprovação.
 
@@ -26,6 +26,7 @@ Cada teste funcional concluído gera `android-funcional-NN.json` com os resultad
 Oito DOCX/PDF individuais e um consolidado de cada formato são gerados de fontes comuns em `relatorios/fontes/`. O verificador `verificar_entrega.py` abre os arquivos, confere limites de páginas dos PDFs e compara as imagens incorporadas com os PNG de origem. O DOCX é conferido estruturalmente; não foi renderizado no Microsoft Word. O resultado final desse verificador está em `entrega-verificacao.json` quando aprovado.
 
 As referências externas registradas em `referencias-verificadas.json` responderam HTTP 200. Foram consultados Dart, código e documentação de API do Flutter e Android Open Source Project e orientações OWASP, além dos materiais UNIP. O registro preserva a data real da consulta, sem inventar data acadêmica.
+
 
 
 
