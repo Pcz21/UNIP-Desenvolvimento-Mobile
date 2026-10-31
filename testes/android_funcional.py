@@ -68,7 +68,7 @@ class Android:
    self.cmd('shell','input','text','Aluno%sUNIP');self.cmd('shell','input','keyevent','KEYCODE_BACK');self.clicar('salvar');self.verificar('Nome salvo: Aluno UNIP','01-salvo.png')
    self.abrir('PreferenciasActivity');self.verificar('Nome recuperado: Aluno UNIP','02-recuperado.png')
   elif n=='07':
-   self.abrir('ValidacaoActivity');self.clicar('validar');self.verificar('E-mail obrigatório.','01-obrigatorios.png')
+   self.abrir('ValidacaoActivity');self.clicar('validar');self.verificar('E-mail obrigatório.','01-obrigatorios.png');self.verificar('Senha obrigatória.')
    self.abrir('ValidacaoActivity');self.preencher('email','invalido');self.preencher('senha','123456');self.clicar('validar');self.verificar('E-mail inválido.','02-email-invalido.png')
    self.abrir('ValidacaoActivity');self.preencher('email','aluno@example.com');self.preencher('senha','12345');self.clicar('validar');self.verificar('Senha deve ter pelo menos 6 caracteres.','03-senha-curta.png')
    self.abrir('ValidacaoActivity');self.preencher('email','aluno@example.com');self.preencher('senha','123456');self.clicar('validar');self.verificar('Dados válidos localmente.','04-valido.png')

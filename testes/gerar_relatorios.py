@@ -24,6 +24,8 @@ styles.add(ParagraphStyle('Legenda',parent=styles['Normal'],fontSize=8,leading=1
 def prepare_doc():
  d=Document();s=d.sections[0];s.page_height=Cm(29.7);s.page_width=Cm(21);s.top_margin=Cm(1.7);s.bottom_margin=Cm(1.7);s.left_margin=Cm(2);s.right_margin=Cm(2)
  n=d.styles['Normal'];n.font.name='Arial';n.font.size=Pt(10);n.paragraph_format.space_after=Pt(7)
+ s.header.paragraphs[0].text='UNIP • Instituto de Ciências Exatas e Tecnologia • Desenvolvimento Mobile'
+ s.header.paragraphs[0].runs[0].font.size=Pt(8)
  s.footer.paragraphs[0].text='UNIP • Análise e Desenvolvimento de Sistemas • Desenvolvimento Mobile'
  return d
 def add(d,story,kind,text):
@@ -65,8 +67,13 @@ def render_one(meta,d=None,story=None):
  if own:
   out=f"relatorio{meta['id']}"
   d.save(ROOT/'relatorios/word'/f'{out}.docx')
-  SimpleDocTemplate(str(ROOT/'relatorios/pdf'/f'{out}.pdf'),pagesize=(595.28,841.89),leftMargin=55,rightMargin=55,topMargin=45,bottomMargin=45).build(story)
+  SimpleDocTemplate(str(ROOT/'relatorios/pdf'/f'{out}.pdf'),pagesize=(595.28,841.89),leftMargin=55,rightMargin=55,topMargin=45,bottomMargin=45).build(story,onFirstPage=pagina_pdf,onLaterPages=pagina_pdf)
  return d,story
+def pagina_pdf(canvas, doc):
+ canvas.saveState();canvas.setFont('DejaVu',7);canvas.setFillColor(colors.HexColor('#425466'))
+ canvas.drawString(55,823,'UNIP • Instituto de Ciências Exatas e Tecnologia • Desenvolvimento Mobile')
+ canvas.drawString(55,23,'Análise e Desenvolvimento de Sistemas • '+str(doc.page))
+ canvas.restoreState()
 def main():
  metas=[json.loads(p.read_text()) for p in sorted((ROOT/'relatorios/fontes').glob('relatorio*.json'))]
  for meta in metas:render_one(meta)
@@ -76,5 +83,5 @@ def main():
   for m in metas:
    d.add_page_break();story.append(PageBreak());render_one(m,d,story)
   d.save(ROOT/'relatorios/word/consolidado.docx')
-  SimpleDocTemplate(str(ROOT/'relatorios/pdf/consolidado.pdf'),pagesize=(595.28,841.89),leftMargin=55,rightMargin=55,topMargin=45,bottomMargin=45).build(story)
+  SimpleDocTemplate(str(ROOT/'relatorios/pdf/consolidado.pdf'),pagesize=(595.28,841.89),leftMargin=55,rightMargin=55,topMargin=45,bottomMargin=45).build(story,onFirstPage=pagina_pdf,onLaterPages=pagina_pdf)
 if __name__=='__main__':main()

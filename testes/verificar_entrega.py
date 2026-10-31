@@ -18,6 +18,7 @@ def imgs(meta):
 results=[];all_images=[]
 for n in ['01','02','03','04','05','06','07','08']:
  m=json.loads((R/f'relatorios/fontes/relatorio{n}.json').read_text());paths=imgs(m);all_images+=paths
+ assert {str(p.relative_to(R)) for p in (R/'evidencias'/('relatorio'+n)).glob('*.png')}==set(paths),(n,'PNG não incorporado ao relatório')
  expected={hashlib.sha256((R/p).read_bytes()).hexdigest() for p in paths}
  docx=R/f'relatorios/word/relatorio{n}.docx';pdf=R/f'relatorios/pdf/relatorio{n}.pdf'
  Document(docx)
@@ -37,6 +38,13 @@ for n in ['01','02','03','04','05','06','07','08']:
  results.append({'relatorio':n,'paginas_pdf':len(d),'imagens_originais':len(paths),'imagens_docx_e_pdf':'conferidas','docx':'aberto por python-docx; pacote ZIP íntegro','pdf':'aberto por PyMuPDF'})
 pdf=fitz.open(R/'relatorios/pdf/consolidado.pdf')
 assert len(pdf)==1+sum(x['paginas_pdf'] for x in results)
+combined_pixels=set()
+for pg in pdf:
+ for img in pg.get_images(full=True):combined_pixels.add(pixels(pdf.extract_image(img[0])['image']))
+assert combined_pixels=={pixels((R/p).read_bytes()) for p in all_images},'Imagens do PDF consolidado divergentes'
+with ZipFile(R/'artefatos/unip-mobile-debug.apk') as apk:
+ assert apk.testzip() is None
+ assert {'classes.dex','AndroidManifest.xml','resources.arsc'}<=set(apk.namelist())
 with ZipFile(R/'relatorios/word/consolidado.docx') as z:
  assert {hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if n.startswith('word/media/')}=={hashlib.sha256((R/p).read_bytes()).hexdigest() for p in all_images}
 for p in ['CHECKLIST_GERAL.md','README.md','PENDENCIAS_REAIS.md','LEVAR_PARA_FACULDADE.md','artefatos/unip-mobile-debug.apk']:
