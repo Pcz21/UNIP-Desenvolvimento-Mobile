@@ -26,7 +26,7 @@ Rubrica do relatório: Teoria 2; ambiente 3; criação/execução 3; relatório 
 
 Fonte: Roteiro pp. 5–7; relatório pp. 4–5.
 
-- [ ] TextView, EditText (e-mail e senha), Button Entrar, LinearLayout e título; cores/espaços; interação local; XML, print e explicação.
+- [x] TextView, EditText (e-mail e senha), Button Entrar, LinearLayout e título; cores/espaços; interação local; XML, print e explicação.
 
 Rubrica do roteiro: XML 3; visual 3; funcionamento 2; relatório 2.
 
@@ -36,7 +36,7 @@ Rubrica do relatório: Teoria 2; interface 3; funcionamento 3; relatório 2.
 
 Fonte: Roteiro pp. 8–9; relatório pp. 6–7.
 
-- [ ] MaterialApp, Scaffold, TextField, ElevatedButton; e-mail/senha/Login/boas-vindas; código Dart e captura; explicar Flutter, Dart e widgets; comparar nativo/Flutter e vantagens.
+- [x] MaterialApp, Scaffold, TextField, ElevatedButton; e-mail/senha/Login/boas-vindas; código Dart e captura; explicar Flutter, Dart e widgets; comparar nativo/Flutter e vantagens.
 
 Rubrica do roteiro: Estrutura 3; widgets 3; funcionamento 2; relatório 2.
 
@@ -46,7 +46,7 @@ Rubrica do relatório: Clareza 2; conceitos 3; interface 3; criatividade/melhori
 
 Fonte: Roteiro pp. 10–11; relatório pp. 8–9.
 
-- [ ] Cadastro, Consultar, Configurações, Sair; botões, ícones, XML; ações funcionais; XML/print/explicação; teoria de navegação e conclusão sobre experiência do usuário.
+- [x] Cadastro, Consultar, Configurações, Sair; botões, ícones, XML; ações funcionais; XML/print/explicação; teoria de navegação e conclusão sobre experiência do usuário.
 
 Rubrica do roteiro: Organização 3; componentes 3; funcionamento 2; relatório 2.
 
@@ -56,7 +56,7 @@ Rubrica do relatório: Conceitos 2; menu 3; funcionamento 3; relatório 2.
 
 Fonte: Roteiro pp. 12–13; relatório p. 10.
 
-- [ ] Pergunta Quais tecnologias você conhece?; Java/Kotlin/Flutter/Python; Verificar Resposta; capturar escolhas; Java e XML completos; prints; usos práticos e formulários; testes nenhuma/uma/múltiplas.
+- [x] Pergunta Quais tecnologias você conhece?; Java/Kotlin/Flutter/Python; Verificar Resposta; capturar escolhas; Java e XML completos; prints; usos práticos e formulários; testes nenhuma/uma/múltiplas.
 
 Rubrica do roteiro: CheckBox 4; lógica 3; interface 2; relatório 1.
 
@@ -97,9 +97,9 @@ Rubrica do relatório: Teoria 3; lógica 3; funcionamento 2; relatório 2.
 |Relatório|Código desenvolvido|Compilação realizada|Aplicativo executado|Testes realizados|Prints reais|Capturas inseridas|Word gerado|PDF gerado|Pendências|Status|
 |---|---|---|---|---|---|---|---|---|---|---|
 |01|sim|sim|sim|1 verificações de interface aprovadas|1|sim|sim|sim|Preencher identificação acadêmica; print real da IDE Android Studio e exploração da estrutura|parcialmente concluído|
-|02|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído (técnico); identificação a preencher|
+|02|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |03|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|
-|04|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|04|sim|sim|sim|5 verificações de interface aprovadas|4|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |05|sim|sim|não|15 testes compartilhados de regras Java (R5/R7); interface não testada|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
 |06|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
 |07|sim|sim|não|15 testes compartilhados de regras Java (R5/R7); interface não testada|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|

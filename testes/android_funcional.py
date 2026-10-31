@@ -39,6 +39,10 @@ class Android:
    assert png.startswith(b'\x89PNG\r\n\x1a\n')
    (self.d/arquivo).write_bytes(png)
   self.resultados.append({'esperado':texto,'resultado':'aprovado','captura':arquivo})
+  (ROOT/'testes'/f'android-parcial-{self.n}.json').write_text(json.dumps({'atividade':self.n,'plataforma':'Emulador Android API 30 x86_64, TCG sem KVM','testes':self.resultados,'status':'parcial'},ensure_ascii=False,indent=2))
+  if arquivo:
+   S.run(['python',str(ROOT/'testes/incorporar_evidencias.py'),self.n,'--parcial'],check=True)
+   S.run(['python',str(ROOT/'testes/gerar_relatorios.py')],check=True)
  def rodar(self):
   n=self.n
   if n=='01':

@@ -1,0 +1,31 @@
+{
+  "atividade": "04",
+  "plataforma": "Emulador Android API 30 x86_64, TCG sem KVM",
+  "testes": [
+    {
+      "esperado": "Menu de atividades",
+      "resultado": "aprovado",
+      "captura": "01-menu.png"
+    },
+    {
+      "esperado": "Tela demonstrativa de cadastro.",
+      "resultado": "aprovado",
+      "captura": "02-cadastro.png"
+    },
+    {
+      "esperado": "Consulta demonstrativa:",
+      "resultado": "aprovado",
+      "captura": "03-consultar.png"
+    },
+    {
+      "esperado": "Modo didático local.",
+      "resultado": "aprovado",
+      "captura": "04-configuracoes.png"
+    },
+    {
+      "esperado": "Sair encerra tarefa",
+      "resultado": "aprovado",
+      "captura": null
+    }
+  ]
+}

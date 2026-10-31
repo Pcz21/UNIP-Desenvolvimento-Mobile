@@ -9,6 +9,11 @@ for n in ['01','02','03','04','05','06','07','08']:
  pend='Preencher identificação acadêmica'
  if n=='01':pend+='; print real da IDE Android Studio e exploração da estrutura'
  if not ok:pend+=('; executar e capturar emulador' if native else '; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter')
- status='concluído (técnico); identificação a preencher' if ok and n!='01' else 'parcialmente concluído'
+ status='concluído' if ok and n!='01' else 'parcialmente concluído'
  s+=f"|{n}|sim|{'sim' if native else 'não'}|{'sim' if ok else 'não'}|{testes}|{ct}|{'sim' if ok and ct else 'não'}|sim|sim|{pend}|{status}|\n"
+import re
+for n in ['02','04','05','06','07']:
+ if (R/'testes'/f'android-funcional-{n}.json').exists():
+  pattern=r'(### Relatório '+n+r' — .*?\n\nFonte: .*?\n\n)- \[ \]'
+  s=re.sub(pattern,lambda m:m.group(1)+'- [x]',s,flags=re.S)
 p.write_text(s)

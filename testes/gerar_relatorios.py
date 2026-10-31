@@ -40,7 +40,7 @@ def add(d,story,kind,text):
    row=[];cells=dt.add_row().cells
    for j,item in enumerate(text[first:first+2]):
     path=ROOT/item['path'];w,h=PILImage.open(path).size
-    height=180;width=height*w/h
+    height=250 if len(text)<=2 else 180;width=height*w/h
     if width>200:width=200;height=width*h/w
     row.append([Image(str(path),width=width,height=height),Paragraph(escape(item['caption']),styles['Legenda'])])
     cells[j].paragraphs[0].add_run().add_picture(str(path),height=Inches(height/72))
