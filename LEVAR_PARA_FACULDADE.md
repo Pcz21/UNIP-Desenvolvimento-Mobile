@@ -23,7 +23,7 @@ Se DartPad estiver indisponível no laboratório, use o Cloud após liberar o do
 2. O arquivo `local.properties` é local, não versionado. Use o SDK que já está no laboratório; **não copie o caminho do Cloud**. Em caso de falta de ferramenta ou restrição, peça ao responsável técnico; não contorne bloqueios do laboratório.
 3. Aguarde a sincronização e execute em emulador ou dispositivo autorizado, Android 6/API 23 ou superior. O teste remoto, se aprovado, usa API 30; isso não prova comportamento em todas as versões.
 4. A tela inicial é o Relatório 1. Capture a **IDE real** com a árvore de projeto e o aplicativo funcionando. Explique `java`, `res/layout`, `res/values`, Manifest, arquivos Gradle e emulador. Captura do aplicativo sozinha não substitui captura da IDE.
-5. Use os botões da tela inicial para abrir as demais Activities. Não é necessário editar código para selecionar exercício.
+6. Use os botões da tela inicial para abrir as demais Activities. Não é necessário editar código para selecionar exercício.
 
 ### Demonstrações Android
 
@@ -67,6 +67,8 @@ cd flutter/relatorio03-login
 flutter run -d web-server --web-hostname 127.0.0.1 --web-port 8763
 ```
 
+Após build aprovado, há automação preparada (ainda não executada) em `testes/flutter_capturas.py`: execute `python testes/flutter_capturas.py 03` ou `08`. Ela serve o build Flutter real, testa pelo Chromium e captura apenas após confirmar o resultado. Se a semântica do Flutter mudar, investigue o seletor em vez de simular aprovação. Insira as capturas e os resultados nas fontes JSON e regenere os relatórios.
+
 O SDK está fixado em 3.35.7, verificado pelo SHA-256 do manifesto oficial. A instalação e os testes Flutter só podem ser chamados de aprovados após executar e conferir os logs. Não compartilhe links localhost como prévias; faça validação interna ou use DartPad em seu navegador.
 
 ## Atualizar relatórios com novas evidências
@@ -76,5 +78,5 @@ Os arquivos editáveis de conteúdo estão em `relatorios/fontes/relatorioNN.jso
 - Preserve os PNG originais; inclua caminho, legenda, contexto e resultado observado no JSON. O tipo `grid` dispõe imagens originais sem fabricar pixels.
 - Para capturas Android produzidas por `testes/android_funcional.py NN`, execute `python testes/incorporar_evidencias.py NN` e depois `python testes/gerar_relatorios.py`.
 - Edite as fontes JSON atuais; não reconstrua rascunhos antigos sobre relatórios revisados.
-- Instale as dependências Python locais conforme `testes/requirements.txt` se não estiverem disponíveis. Nunca forneça senhas ou tokens no terminal ou chat.
+- No Cloud, use dependências em ambiente virtual dentro do projeto, conforme `testes/requirements.txt` se não estiverem disponíveis. Nunca forneça senhas ou tokens no terminal ou chat.
 - Revise páginas, imagens e identificação. Execute `python testes/verificar_entrega.py`. Atualize checklist e pendências com os resultados reais antes de enviar ao professor.

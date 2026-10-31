@@ -74,6 +74,7 @@ class Android:
    self.abrir('ValidacaoActivity');self.preencher('email','aluno@example.com');self.preencher('senha','123456');self.clicar('validar');self.verificar('Dados válidos localmente.','04-valido.png')
   else:raise ValueError(n)
   (ROOT/'testes'/f'android-funcional-{n}.json').write_text(json.dumps({'atividade':n,'plataforma':'Emulador Android API 30 x86_64, TCG sem KVM','testes':self.resultados},ensure_ascii=False,indent=2))
+  (ROOT/'testes'/f'android-parcial-{n}.json').unlink(missing_ok=True)
   print(n,len(self.resultados),'verificações funcionais aprovadas',flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('atividade',choices=['01','02','04','05','06','07']);args=p.parse_args();Android(args.atividade).rodar()

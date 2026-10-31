@@ -1,0 +1,31 @@
+{
+  "atividade": "07",
+  "plataforma": "Emulador Android API 30 x86_64, TCG sem KVM",
+  "testes": [
+    {
+      "esperado": "E-mail obrigatório.",
+      "resultado": "aprovado",
+      "captura": "01-obrigatorios.png"
+    },
+    {
+      "esperado": "Senha obrigatória.",
+      "resultado": "aprovado",
+      "captura": null
+    },
+    {
+      "esperado": "E-mail inválido.",
+      "resultado": "aprovado",
+      "captura": "02-email-invalido.png"
+    },
+    {
+      "esperado": "Senha deve ter pelo menos 6 caracteres.",
+      "resultado": "aprovado",
+      "captura": "03-senha-curta.png"
+    },
+    {
+      "esperado": "Dados válidos localmente.",
+      "resultado": "aprovado",
+      "captura": "04-valido.png"
+    }
+  ]
+}
