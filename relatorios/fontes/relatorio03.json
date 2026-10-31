@@ -1,0 +1,107 @@
+{
+  "id": "03",
+  "pages": [
+    [
+      [
+        "title",
+        "Relatório 3 — Tela de login com Flutter e DartPad"
+      ],
+      [
+        "p",
+        "Nome: [PREENCHER] | RA: [PREENCHER]\nPolo: [PREENCHER] | Local da aula prática: [PREENCHER]\nData acadêmica: [PREENCHER]. Desenvolvimento remoto no Codex Cloud; sem declaração de participação presencial."
+      ],
+      [
+        "h",
+        "Objetivo e fundamentos"
+      ],
+      [
+        "p",
+        "Construir uma tela de login demonstrativa com e-mail, senha, botão e mensagem de boas-vindas. Flutter é um framework de interfaces multiplataforma: descreve a interface como uma árvore de widgets e desenha seus componentes com um mecanismo de renderização próprio. Dart é a linguagem utilizada, com tipos, classes e compilação para diferentes plataformas."
+      ],
+      [
+        "p",
+        "Um widget é uma descrição imutável de uma parte da interface. MaterialApp configura tema e navegação; Scaffold fornece a estrutura da tela e AppBar; TextField recebe a entrada; ElevatedButton dispara a ação. StatefulWidget mantém o estado da mensagem; setState solicita a atualização visual após validar os campos."
+      ],
+      [
+        "h",
+        "Implementação e organização"
+      ],
+      [
+        "p",
+        "O projeto está em flutter/relatorio03-login. O arquivo lib/main.dart é completo e pode ser copiado para o modo Flutter do DartPad, sem pacotes externos. A tela usa largura máxima de 420 pixels, rolagem, rótulos nos campos e tema consistente. A senha fica oculta e seu controlador é limpo após o sucesso; os dois controladores são liberados em dispose."
+      ],
+      [
+        "p",
+        "A ação Login verifica campos vazios e o formato básico de e-mail. Com dados preenchidos, exibe Bem-vindo(a), seguido do e-mail informado. Não envia requisições, verifica identidade ou cria sessão. Esse comportamento não representa autenticação em produção."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Trechos centrais e código integral"
+      ],
+      [
+        "code",
+        "void main() => runApp(const LoginApp());\n// MaterialApp -> Scaffold -> TextField / ElevatedButton\nElevatedButton(onPressed: entrar, child: const Text('Login'))\n// Em entrar():\n// vazio -> Preencha e-mail e senha.\n// formato inválido -> Informe um e-mail válido.\n// válido -> Bem-vindo(a), seguido do e-mail; senha.clear()."
+      ],
+      [
+        "p",
+        "Código integral: flutter/relatorio03-login/lib/main.dart. O anexo em arquivo preserva a implementação completa sem ultrapassar o limite de páginas do relatório."
+      ],
+      [
+        "h",
+        "Testes e resultados reais"
+      ],
+      [
+        "p",
+        "Testes preparados em test/app_test.dart: tentativa sem preencher, e-mail inválido, login válido e limpeza da senha. Até esta versão, não executados: o SDK Flutter não pôde ser instalado porque o proxy recusou storage.googleapis.com com HTTP 403. Não houve compilação, execução no navegador ou teste funcional Flutter confirmado."
+      ],
+      [
+        "p",
+        "Procedimento de reprodução: flutter pub get; flutter analyze; flutter test; flutter build web --no-web-resources-cdn; flutter run -d chrome. Depois de executar, preencher e-mail e uma senha fictícia, acionar Login e conferir a mensagem. Capturar a tela inicial e a mensagem de boas-vindas."
+      ],
+      [
+        "h",
+        "Conclusão — comparação entre plataformas"
+      ],
+      [
+        "p",
+        "No Android nativo, Activity Java coordena o ciclo de vida e o XML declara componentes da plataforma Android. Flutter usa Dart e widgets para compartilhar a interface entre Android, web e outras plataformas. O compartilhamento de código e a atualização rápida favorecem prototipagem; APIs específicas podem exigir integração nativa. O projeto está implementado, mas o funcionamento permanece pendente de validação real."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Evidências de execução"
+      ],
+      [
+        "p",
+        "EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA"
+      ],
+      [
+        "p",
+        "Nenhuma imagem artificial ou captura de outro aplicativo foi usada. Esta seção será substituída por capturas autênticas, com legenda, assim que o projeto puder ser executado. Status: parcialmente concluído."
+      ],
+      [
+        "h",
+        "Referências"
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Roteiros: Desenvolvimento Mobile. [S. l.]: UNIP, [s. d.]. Roteiro 3. Material didático fornecido."
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Desenvolvimento Mobile: relatório de aulas práticas. [S. l.]: UNIP, [s. d.]. Relatório 3. Material didático fornecido."
+      ],
+      [
+        "p",
+        "FLUTTER. Flutter documentation. [S. l.], [s. d.]. Disponível em: https://docs.flutter.dev/. Consulta on-line pendente de liberação de rede."
+      ],
+      [
+        "p",
+        "DART. Dart overview. [S. l.], [s. d.]. Disponível em: https://dart.dev/overview. Consulta on-line pendente de liberação de rede."
+      ]
+    ]
+  ]
+}
