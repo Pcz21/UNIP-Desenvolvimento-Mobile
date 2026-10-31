@@ -5,10 +5,11 @@
 Leitura integral: Roteiro.dev.mobile.pdf (17 páginas) e Relatório.dev.mobile.pdf (13 páginas). Textos extraídos preservados em documentos_oficiais. Os pesos abaixo pertencem a rubricas diferentes; nenhuma foi substituída pela outra. Requisitos adicionais do pedido (testes, complexidade, versões editáveis e continuidade) complementam os PDFs.
 
 - [ ] Identificação: nome, RA, polo e local reais, a preencher; não declarar presença ou datas acadêmicas não informadas.
-- [ ] R1: 1–2 páginas; R2–R8: 2–3 páginas; teoria, prática, códigos, referências ABNT e conclusões específicas.
-- [ ] Evidências autênticas incorporadas e legendadas imediatamente; sem captura, usar EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA.
+- [x] PDFs: R1 com 2 páginas; R2–R8 com 3 páginas; teoria, prática, códigos, referências ABNT e conclusões específicas.
+- [x] 22 evidências autênticas incorporadas e legendadas; 16 PNG originais preservados por SHA-256.
 - [x] Oito DOCX/PDF, consolidado com capa, códigos completos separados, testes e guia de laboratório.
-- [ ] Conferir páginas/imagens/abertura e salvar no GitHub.
+- [x] PDFs renderizados, páginas e imagens conferidas; DOCX abertos estruturalmente; entrega salva na main do GitHub.
+- [ ] Conferência visual dos DOCX no editor final: a tentativa de renderização local por LibreOffice falhou no bootstrap UNO; consultar PENDENCIAS_REAIS.md.
 
 Os documentos também preveem redução proporcional de nota por atraso ou descumprimento dos requisitos mínimos. Prazo institucional: [NÃO INFORMADO — confirmar com o docente]. O roteiro 3 menciona criatividade/aprimoramentos no modelo de avaliação; a implementação acrescenta tema, rolagem, rótulos e tratamento local de entrada. Os recursos de aula (projetor/compartilhamento de tela no roteiro 1) não constituem evidência de presença e não foram presumidos.
 
@@ -100,7 +101,7 @@ Conclusão técnica não preenche dados pessoais nem declara presença no labora
 
 |Relatório|Código desenvolvido|Compilação realizada|Aplicativo executado|Testes realizados|Prints reais|Capturas inseridas|Word gerado|PDF gerado|Pendências|Status|
 |---|---|---|---|---|---|---|---|---|---|---|
-|01|sim|sim|sim|1 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
+|01|sim|sim|sim|1 verificação de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |02|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |03|sim|sim|sim|5 verificações de interface aprovadas; testes Flutter aprovados|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |04|sim|sim|sim|5 verificações de interface aprovadas|4|sim|sim|sim|Preencher identificação acadêmica|concluído|

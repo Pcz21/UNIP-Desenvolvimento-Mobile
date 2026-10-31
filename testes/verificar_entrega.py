@@ -34,6 +34,7 @@ for n in ['01','02','03','04','05','06','07','08']:
  assert minpages<=len(d)<=maxpages,(n,'limite de páginas',len(d))
  expectedpixels={pixels((R/p).read_bytes()) for p in paths};actualpixels=set()
  for pg in d:
+  raster=pg.get_pixmap(matrix=fitz.Matrix(0.75,0.75));assert raster.width>0 and raster.height>0
   for img in pg.get_images(full=True):actualpixels.add(pixels(d.extract_image(img[0])['image']))
  assert actualpixels==expectedpixels,(n,'PDF: pixels incorporados divergentes')
  text=''.join(pg.get_text() for pg in d)
@@ -44,6 +45,7 @@ pdf=fitz.open(R/'relatorios/pdf/consolidado.pdf')
 assert len(pdf)==1+sum(x['paginas_pdf'] for x in results)
 combined_pixels=set()
 for pg in pdf:
+ raster=pg.get_pixmap(matrix=fitz.Matrix(0.75,0.75));assert raster.width>0 and raster.height>0
  for img in pg.get_images(full=True):combined_pixels.add(pixels(pdf.extract_image(img[0])['image']))
 assert combined_pixels=={pixels((R/p).read_bytes()) for p in all_images},'Imagens do PDF consolidado divergentes'
 with ZipFile(R/'artefatos/unip-mobile-debug.apk') as apk:

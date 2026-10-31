@@ -14,6 +14,7 @@ for n in ['01','02','03','04','05','06','07','08']:
    compiled=data.get('build_web')=='aprovado' and data['source_sha256']==hashlib.sha256((R/'flutter'/folder/'lib/main.dart').read_bytes()).hexdigest()
  imgs=list((R/'evidencias'/f'relatorio{n}').glob('*.png'));ct=len(imgs)
  testes=f"{len(json.loads(log.read_text())['testes'])} verificações de interface aprovadas" if ok else 'interface pendente'
+ testes=testes.replace('1 verificações','1 verificação')
  if not native and compiled:testes+='; testes Flutter aprovados'
  pend='Preencher identificação acadêmica'
  studio=(R/'testes/android-studio-evidencia.json').exists()
