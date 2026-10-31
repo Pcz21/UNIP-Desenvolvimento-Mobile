@@ -59,7 +59,7 @@
     {
       "relatorio": "08",
       "paginas_pdf": 3,
-      "imagens_originais": 0,
+      "imagens_originais": 3,
       "imagens_docx_e_pdf": "conferidas",
       "docx": "aberto por python-docx; pacote ZIP íntegro",
       "pdf": "aberto por PyMuPDF"

@@ -1,0 +1,26 @@
+{
+  "atividade": "08",
+  "plataforma": "Flutter web real em Chromium headless",
+  "testes": [
+    {
+      "esperado": "Senha Fraca",
+      "resultado": "aprovado",
+      "captura": "01-fraca.png"
+    },
+    {
+      "esperado": "Senha Média",
+      "resultado": "aprovado",
+      "captura": "02-media.png"
+    },
+    {
+      "esperado": "Senha Forte",
+      "resultado": "aprovado",
+      "captura": "03-forte.png"
+    },
+    {
+      "esperado": "Digite uma senha para analisar.",
+      "resultado": "aprovado",
+      "captura": null
+    }
+  ]
+}

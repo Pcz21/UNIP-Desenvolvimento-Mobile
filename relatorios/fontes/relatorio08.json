@@ -54,7 +54,7 @@
       ],
       [
         "p",
-        "Há testes preparados para tamanho 7/8/11/12, ausência de diversidade, espaço sem pontuação, três classificações e limpeza do campo. Não executados nesta versão: o SDK Flutter depende de storage.googleapis.com, bloqueado pelo proxy (HTTP 403). Nenhuma execução ou captura Flutter foi confirmada. Não se atribui aprovação a testes apenas escritos."
+        "Flutter 3.35.7 e Dart 3.9.2 instalados com SHA-256 oficial. flutter pub get, flutter analyze, flutter test e flutter build web aprovados. A suíte executou 2 teste(s) de widget/lógica. O aplicativo compilado também foi servido localmente e testado em Chromium: 4 verificações de interface aprovadas. Logs e registros: testes/flutter-validacao-08.json e flutter-funcional-08.json."
       ],
       [
         "p",
@@ -66,21 +66,38 @@
       ],
       [
         "p",
-        "A implementação explicita as regras para permitir testes reproduzíveis. Em sistemas reais, um indicador deve orientar sem prometer segurança absoluta. São necessários senhas longas e exclusivas, proteção de transporte, armazenamento no servidor com algoritmo apropriado de derivação de senha e autenticação multifator. A atividade ainda depende de execução e evidências antes da entrega final."
+        "A implementação explicita as regras para permitir testes reproduzíveis. Em sistemas reais, um indicador deve orientar sem prometer segurança absoluta. São necessários senhas longas e exclusivas, proteção de transporte, armazenamento no servidor com algoritmo apropriado de derivação de senha e autenticação multifator. A execução no navegador confirmou os três níveis e o retorno à instrução inicial ao limpar o campo."
       ]
     ],
     [
       [
         "h",
-        "Evidências de execução"
+        "Evidências autênticas e resultados"
       ],
       [
         "p",
-        "EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA"
+        "Aplicativo Flutter real compilado e executado em Chromium. 4 verificações de interface aprovadas; apenas dados fictícios, sem armazenamento ou logs de senhas. Os PNG originais permanecem em evidencias/relatorio08."
+      ],
+      [
+        "grid",
+        [
+          {
+            "path": "evidencias/relatorio08/01-fraca.png",
+            "caption": "Figura 1 — Classificação Senha Fraca. Fonte: execução própria em Chromium."
+          },
+          {
+            "path": "evidencias/relatorio08/02-media.png",
+            "caption": "Figura 2 — Classificação Senha Média. Fonte: execução própria em Chromium."
+          },
+          {
+            "path": "evidencias/relatorio08/03-forte.png",
+            "caption": "Figura 3 — Classificação Senha Forte. Fonte: execução própria em Chromium."
+          }
+        ]
       ],
       [
         "p",
-        "Nenhuma imagem artificial ou captura de outro aplicativo foi usada. Esta seção será substituída por capturas autênticas, com legenda, assim que o projeto puder ser executado. Status: parcialmente concluído."
+        "Requisitos técnicos e capturas concluídos. Identificação acadêmica permanece a preencher pelo estudante."
       ],
       [
         "h",

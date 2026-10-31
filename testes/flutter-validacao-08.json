@@ -1,0 +1,16 @@
+{
+  "atividade": "08",
+  "sdk": "Flutter 3.35.7 / Dart 3.9.2",
+  "analyze": "aprovado",
+  "test": "aprovado",
+  "build_web": "aprovado",
+  "widget_tests": 2,
+  "source_sha256": "ffa94034caa90c15ed5be7ebaf31c6876644e8909e8f8c331a05cdfd9ef86f2c",
+  "bundle_sha256": "2680f23d7e3f129b0483bfafe29c77442cf91859351e95717a3dc0dcf23b5e5f",
+  "registro_utc": "2026-10-31T13:05:43.997640+00:00",
+  "logs": {
+    "analyze": "testes/relatorio08-senhas-analyze.log",
+    "test": "testes/relatorio08-senhas-test.log",
+    "build": "testes/relatorio08-senhas-build.log"
+  }
+}

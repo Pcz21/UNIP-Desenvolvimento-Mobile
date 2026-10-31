@@ -107,4 +107,4 @@ Conclusão técnica não preenche dados pessoais nem declara presença no labora
 |05|sim|sim|sim|3 verificações de interface aprovadas|3|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |06|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |07|sim|sim|sim|5 verificações de interface aprovadas|4|sim|sim|sim|Preencher identificação acadêmica|concluído|
-|08|sim|não|não|interface pendente|0|não|sim|sim|Preencher identificação acadêmica; concluir execução, testes e capturas reais|parcialmente concluído|
+|08|sim|sim|sim|4 verificações de interface aprovadas; testes Flutter aprovados|3|sim|sim|sim|Preencher identificação acadêmica|concluído|
