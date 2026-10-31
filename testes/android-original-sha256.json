@@ -1,0 +1,21 @@
+{
+  "commit": "3988be1",
+  "imagens": {
+    "evidencias/relatorio01/01-aplicativo.png": "90f0d8564f4da25fbbd07927cde04ec61f0db4b2a246734c5157d052039290cf",
+    "evidencias/relatorio02/01-login.png": "813bcfccbfbb10f7062e55416a0c47de902cc4940ccad6bdedebb72e84805340",
+    "evidencias/relatorio02/02-interacao.png": "789d916eff532103393ec042bba6733115d47ff750a50640992c51cf68ee3257",
+    "evidencias/relatorio04/01-menu.png": "c69ebbc688ff489c345fc9ffd9f02834c17fcd8289e0430b096981ffd1d22577",
+    "evidencias/relatorio04/02-cadastro.png": "37abdef1c1cc0aaea299164bff53fa4395ca66158551e9f7491a7480e6bbba7c",
+    "evidencias/relatorio04/03-consultar.png": "6425d109b688a0b4ffc871afa5c45b1006ab11d28e3f7c119ece621b8d167e49",
+    "evidencias/relatorio04/04-configuracoes.png": "c8a46ebf8091af5a185c3bdd02082f479f16b1cc11998a54e670d597be1eb2fb",
+    "evidencias/relatorio05/01-nenhuma.png": "d336343313bbba13f658c8e3233a62a32d4aeac9593b9e86761b531d9f89767c",
+    "evidencias/relatorio05/02-uma.png": "f36a32f66ecfa0fc52865ba7fc4dcfb72e5c2d27e244b07e6a2f5b65320a8f06",
+    "evidencias/relatorio05/03-multiplas.png": "84e4537140d76124ff592c4a45f78a70fb973d423d927de8d24b263939dbd12e",
+    "evidencias/relatorio06/01-salvo.png": "2d11f0190c13148e22e5e7d4ea7b614fc7a74f1189590fd618123896805d28e4",
+    "evidencias/relatorio06/02-recuperado.png": "0e724fc220e610534b995190eec8037db4547f8082fca282b5b81bde143a3c6f",
+    "evidencias/relatorio07/01-obrigatorios.png": "93b6a3f21e7768f2b89475a9f7895d69305bb777f5d5cfc8fe56927ccbfc91dd",
+    "evidencias/relatorio07/02-email-invalido.png": "a5e413e4d6290cc0938e3c34b1146e3ae8a57cc99a001a4eaaf04a1ab7db15e4",
+    "evidencias/relatorio07/03-senha-curta.png": "deffda3d2858054fba21c36facdbabe48d3077a3206c1bfbe738c66c4ab48ccd",
+    "evidencias/relatorio07/04-valido.png": "70986a40f65a8beb08ca9a74ee9deb6e07919e11af4227fcf4a17041bb72420f"
+  }
+}

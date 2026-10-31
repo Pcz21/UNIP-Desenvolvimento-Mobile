@@ -30,17 +30,18 @@ As referências externas registradas em `referencias-verificadas.json` responder
 
 
 
+
 ## Resumo por atividade
 
 |Relatório|Teste de interface|Capturas reais|
 |---|---|---|
-|01|Aprovado: 1 verificações reais|1|
-|02|Aprovado: 3 verificações reais|2|
-|03|Não executado até este resumo|0|
-|04|Aprovado: 5 verificações reais|4|
-|05|Aprovado: 3 verificações reais|3|
-|06|Aprovado: 3 verificações reais|2|
-|07|Aprovado: 5 verificações reais|4|
-|08|Não executado até este resumo|0|
+|01|Aprovado: 1 verificações reais (android)|1|
+|02|Aprovado: 3 verificações reais (android)|2|
+|03|Aprovado: 5 verificações reais (flutter)|2|
+|04|Aprovado: 5 verificações reais (android)|4|
+|05|Aprovado: 3 verificações reais (android)|3|
+|06|Aprovado: 3 verificações reais (android)|2|
+|07|Aprovado: 5 verificações reais (android)|4|
+|08|Execução ainda pendente|0|
 
-Total: **20 verificações de interface aprovadas e 16 PNG reais**. As 15 verificações Java de regras são um conjunto separado. Relatório 1 ainda requer print da IDE Android Studio; Flutter 3 e 8 continuam pendentes de SDK e execução.
+Total: **25 verificações de interface aprovadas e 18 PNG reais**. As 15 verificações Java de regras e os testes Flutter são conjuntos separados. Consulte o checklist para pendências particulares.

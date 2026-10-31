@@ -1,0 +1,31 @@
+{
+  "atividade": "03",
+  "plataforma": "Flutter web real em Chromium headless",
+  "testes": [
+    {
+      "esperado": "Campos E-mail e Senha e botão Login",
+      "resultado": "aprovado",
+      "captura": "01-login-flutter.png"
+    },
+    {
+      "esperado": "Preencha e-mail e senha.",
+      "resultado": "aprovado",
+      "captura": null
+    },
+    {
+      "esperado": "Informe um e-mail válido.",
+      "resultado": "aprovado",
+      "captura": null
+    },
+    {
+      "esperado": "Bem-vindo(a), aluno@example.com!",
+      "resultado": "aprovado",
+      "captura": "02-boas-vindas.png"
+    },
+    {
+      "esperado": "Senha limpa após sucesso",
+      "resultado": "aprovado",
+      "captura": null
+    }
+  ]
+}

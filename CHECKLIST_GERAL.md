@@ -96,13 +96,15 @@ Rubrica do relatório: Teoria 3; lógica 3; funcionamento 2; relatório 2.
 
 ## Situação verificada
 
+Conclusão técnica não preenche dados pessoais nem declara presença no laboratório. Nome, RA, polo, local e data acadêmica permanecem a preencher.
+
 |Relatório|Código desenvolvido|Compilação realizada|Aplicativo executado|Testes realizados|Prints reais|Capturas inseridas|Word gerado|PDF gerado|Pendências|Status|
 |---|---|---|---|---|---|---|---|---|---|---|
-|01|sim|sim|sim|1 verificações de interface aprovadas|1|sim|sim|sim|Preencher identificação acadêmica; print real da IDE Android Studio e exploração da estrutura|parcialmente concluído|
+|01|sim|sim|sim|1 verificações de interface aprovadas|1|sim|sim|sim|Preencher identificação acadêmica; captura real da IDE Android Studio|parcialmente concluído|
 |02|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
-|03|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|
+|03|sim|sim|sim|5 verificações de interface aprovadas; testes Flutter aprovados|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |04|sim|sim|sim|5 verificações de interface aprovadas|4|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |05|sim|sim|sim|3 verificações de interface aprovadas|3|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |06|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |07|sim|sim|sim|5 verificações de interface aprovadas|4|sim|sim|sim|Preencher identificação acadêmica|concluído|
-|08|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|
+|08|sim|não|não|interface pendente|0|não|sim|sim|Preencher identificação acadêmica; concluir execução, testes e capturas reais|parcialmente concluído|

@@ -54,7 +54,7 @@
       ],
       [
         "p",
-        "Testes preparados em test/app_test.dart: tentativa sem preencher, e-mail inválido, login válido e limpeza da senha. Até esta versão, não executados: o SDK Flutter não pôde ser instalado porque o proxy recusou storage.googleapis.com com HTTP 403. Não houve compilação, execução no navegador ou teste funcional Flutter confirmado."
+        "Flutter 3.35.7 e Dart 3.9.2 instalados com SHA-256 oficial. flutter pub get, flutter analyze, flutter test e flutter build web aprovados. A suíte executou 1 teste(s) de widget/lógica. O aplicativo compilado também foi servido localmente e testado em Chromium: 5 verificações de interface aprovadas. Logs e registros: testes/flutter-validacao-03.json e flutter-funcional-03.json."
       ],
       [
         "p",
@@ -66,21 +66,34 @@
       ],
       [
         "p",
-        "No Android nativo, Activity Java coordena o ciclo de vida e o XML declara componentes da plataforma Android. Flutter usa Dart e widgets para compartilhar a interface entre Android, web e outras plataformas. O compartilhamento de código e a atualização rápida favorecem prototipagem; APIs específicas podem exigir integração nativa. O projeto está implementado, mas o funcionamento permanece pendente de validação real."
+        "No Android nativo, Activity Java coordena o ciclo de vida e o XML declara componentes da plataforma Android. Flutter usa Dart e widgets para compartilhar a interface entre Android, web e outras plataformas. O compartilhamento de código e a atualização rápida favorecem prototipagem; APIs específicas podem exigir integração nativa. O funcionamento foi confirmado por testes de widget e execução real no navegador; a mesma fonte mantém compatibilidade com a proposta do DartPad."
       ]
     ],
     [
       [
         "h",
-        "Evidências de execução"
+        "Evidências autênticas e resultados"
       ],
       [
         "p",
-        "EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA"
+        "Aplicativo Flutter real compilado e executado em Chromium. 5 verificações de interface aprovadas; apenas dados fictícios, sem armazenamento ou logs de senhas. Os PNG originais permanecem em evidencias/relatorio03."
+      ],
+      [
+        "grid",
+        [
+          {
+            "path": "evidencias/relatorio03/01-login-flutter.png",
+            "caption": "Figura 1 — Login Flutter executado no navegador. Fonte: execução própria em Chromium."
+          },
+          {
+            "path": "evidencias/relatorio03/02-boas-vindas.png",
+            "caption": "Figura 2 — Mensagem real de boas-vindas após Login. Fonte: execução própria em Chromium."
+          }
+        ]
       ],
       [
         "p",
-        "Nenhuma imagem artificial ou captura de outro aplicativo foi usada. Esta seção será substituída por capturas autênticas, com legenda, assim que o projeto puder ser executado. Status: parcialmente concluído."
+        "Requisitos técnicos e capturas concluídos. Identificação acadêmica permanece a preencher pelo estudante."
       ],
       [
         "h",

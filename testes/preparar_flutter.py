@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,hashlib,tarfile,urllib.request as U
 root=Path(__file__).resolve().parents[1]/'.ferramentas';root.mkdir(exist_ok=True)
-url='https://storage.googleapis.com/flutter_infra_release/flutter/releases/releases_linux.json'
+url='https://storage.googleapis.com/flutter_infra_release/releases/releases_linux.json'
 data=json.load(U.urlopen(url,timeout=40))
 release=next(r for r in data['releases'] if r['version']=='3.35.7' and r['channel']=='stable' and r.get('dart_sdk_arch','x64')=='x64')
 archive=root/'flutter.tar.xz'
