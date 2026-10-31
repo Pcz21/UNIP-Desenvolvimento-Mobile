@@ -1,0 +1,8 @@
+error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djava.util.prefs.userRoot=/workspace/UNIP-Desenvolvimento-Mobile/.ferramentas/java-prefs
+[SKIKO] warn: Fallback to next API
+org.jetbrains.skiko.RenderException: Cannot create OpenGL context
+[SKIKO] warn: Fallback to next API
+org.jetbrains.skiko.RenderException: Cannot create OpenGL context
+[SKIKO] warn: Fallback to next API
+org.jetbrains.skiko.RenderException: Cannot create OpenGL context

@@ -5,3 +5,7 @@
 **/.gradle/
 **/local.properties
 __pycache__/
+
+# Arquivos locais gerados pela IDE (fontes Android preservadas).
+**/.idea/
+**/*.iml

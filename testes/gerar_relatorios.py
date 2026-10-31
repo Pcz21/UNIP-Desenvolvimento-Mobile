@@ -54,8 +54,9 @@ def add(d,story,kind,text):
  elif kind=='image':
   path=ROOT/text['path'];caption=text['caption']
   w,h=PILImage.open(path).size
-  width=min(440,w);height=width*h/w
-  if height>420:width*=420/height;height=420
+  width=min(text.get("max_width",440),w);height=width*h/w
+  if height>text.get("max_height",420):
+   limit=text.get("max_height",420);width*=limit/height;height=limit
   d.add_picture(str(path),width=Inches(width/72));d.add_paragraph(caption,style='Caption')
   story.extend([Image(str(path),width=width,height=height),Paragraph(escape(caption),styles['Legenda'])])
 def render_one(meta,d=None,story=None):

@@ -18,7 +18,7 @@ Os documentos também preveem redução proporcional de nota por atraso ou descu
 
 Fonte: Roteiro pp. 2–4; relatório pp. 2–3.
 
-- [ ] Criar projeto; alterar texto; executar; explicar IDE, Activity, XML, Manifest, Gradle, res e Java; prints reais da IDE e estrutura.
+- [x] Criar projeto; alterar texto; executar; explicar IDE, Activity, XML, Manifest, Gradle, res e Java; prints reais da IDE e estrutura.
 
 Rubrica do roteiro: Instalação 3; criação 3; execução 2; relatório 2.
 
@@ -100,7 +100,7 @@ Conclusão técnica não preenche dados pessoais nem declara presença no labora
 
 |Relatório|Código desenvolvido|Compilação realizada|Aplicativo executado|Testes realizados|Prints reais|Capturas inseridas|Word gerado|PDF gerado|Pendências|Status|
 |---|---|---|---|---|---|---|---|---|---|---|
-|01|sim|sim|sim|1 verificações de interface aprovadas|1|sim|sim|sim|Preencher identificação acadêmica; captura real da IDE Android Studio|parcialmente concluído|
+|01|sim|sim|sim|1 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |02|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |03|sim|sim|sim|5 verificações de interface aprovadas; testes Flutter aprovados|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |04|sim|sim|sim|5 verificações de interface aprovadas|4|sim|sim|sim|Preencher identificação acadêmica|concluído|

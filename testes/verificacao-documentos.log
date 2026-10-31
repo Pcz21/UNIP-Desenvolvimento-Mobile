@@ -3,7 +3,7 @@
     {
       "relatorio": "01",
       "paginas_pdf": 2,
-      "imagens_originais": 1,
+      "imagens_originais": 2,
       "imagens_docx_e_pdf": "conferidas",
       "docx": "aberto por python-docx; pacote ZIP íntegro",
       "pdf": "aberto por PyMuPDF"
@@ -67,5 +67,10 @@
   ],
   "consolidado_paginas": 24,
   "verificacao": "aprovada",
-  "limite": "DOCX verificado estruturalmente, sem renderização no Microsoft Word; paginação visual deve ser revisada ao abrir no laboratório."
+  "estrutura_docx": "aprovada",
+  "renderizacao_docx": "não concluída: falha de bootstrap UNO do LibreOffice local",
+  "pdf_renderizado": "aprovado",
+  "imagens_totais": 22,
+  "originais_android_preservados": 16,
+  "limite": "DOCX aberto estruturalmente e imagens conferidas; renderização adicional por LibreOffice local falhou no contexto UNO. PDF renderizado, com paginação verificada."
 }

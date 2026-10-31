@@ -15,7 +15,7 @@ Preencha **nome, RA, polo, local e data acadêmica reais**. Não declare que o t
 5. Confira os critérios visíveis: Fraca nos demais casos; Média a partir de 8 caracteres e duas classes; Forte a partir de 12 e quatro classes. Teste três entradas **fictícias**, com o campo oculto, e a limpeza do campo. Não use senhas pessoais ou as registre em logs.
 6. Salve as três capturas em `evidencias/relatorio08/`. Registre resultados efetivamente observados; não chame a classificação de garantia de segurança.
 
-Se DartPad estiver indisponível no laboratório, use o Cloud após liberar o download oficial do SDK. Não substitua Flutter por uma página HTML parecida.
+Se DartPad estiver indisponível no laboratório, use o Cloud com o SDK oficial preparado. Não substitua Flutter por uma página HTML parecida.
 
 ## Android Studio já disponível no laboratório
 
@@ -54,7 +54,7 @@ cd android-nativo
 
 O script de ambiente configura proxy e certificados **deste Cloud**. Não o carregue no computador da faculdade. Na IDE do laboratório, use a configuração local. O APK pronto pode ser instalado apenas em dispositivo autorizado; é uma compilação de depuração, sem publicação em loja.
 
-Para Flutter no Cloud, após aplicar a política de rede:
+Para Flutter no Cloud, com a política de rede já aplicada:
 
 ```bash
 cd /workspace/UNIP-Desenvolvimento-Mobile
@@ -67,9 +67,9 @@ cd flutter/relatorio03-login
 flutter run -d web-server --web-hostname 127.0.0.1 --web-port 8763
 ```
 
-Após build aprovado, há automação preparada (ainda não executada) em `testes/flutter_capturas.py`: execute `python testes/flutter_capturas.py 03` ou `08`. Ela serve o build Flutter real, testa pelo Chromium e captura apenas após confirmar o resultado. Se a semântica do Flutter mudar, investigue o seletor em vez de simular aprovação. Insira as capturas e os resultados nas fontes JSON e regenere os relatórios.
+Após build aprovado, há automação executada e validada em `testes/flutter_capturas.py`: execute `python testes/flutter_capturas.py 03` ou `08`. Ela serve o build Flutter real, testa pelo Chromium e captura apenas após confirmar o resultado. Se a semântica do Flutter mudar, investigue o seletor em vez de simular aprovação. Insira as capturas e os resultados nas fontes JSON e regenere os relatórios.
 
-O SDK está fixado em 3.35.7, verificado pelo SHA-256 do manifesto oficial. A instalação e os testes Flutter só podem ser chamados de aprovados após executar e conferir os logs. Não compartilhe links localhost como prévias; faça validação interna ou use DartPad em seu navegador.
+O SDK está fixado em 3.35.7, verificado pelo SHA-256 do manifesto oficial. A instalação, análise, testes e build dos dois projetos foram aprovados no Cloud; consulte os logs preservados. Para uma nova execução, confira o resultado da nova rodada. Não compartilhe links localhost como prévias; faça validação interna ou use DartPad em seu navegador.
 
 ## Atualizar relatórios com novas evidências
 
@@ -80,3 +80,30 @@ Os arquivos editáveis de conteúdo estão em `relatorios/fontes/relatorioNN.jso
 - Edite as fontes JSON atuais; não reconstrua rascunhos antigos sobre relatórios revisados.
 - No Cloud, use dependências em ambiente virtual dentro do projeto, conforme `testes/requirements.txt` se não estiverem disponíveis. Nunca forneça senhas ou tokens no terminal ou chat.
 - Revise páginas, imagens e identificação. Execute `python testes/verificar_entrega.py`. Atualize checklist e pendências com os resultados reais antes de enviar ao professor.
+
+## Evidência Android Studio obtida no Cloud
+
+A pendência do Relatório 1 foi resolvida: o projeto existente abriu no Android Studio Rabbit 2, em Xvfb, com renderização por software. A captura original está em `evidencias/relatorio01/02-android-studio-estrutura.png` e já integra o Word e o PDF. Não é necessário recriar o projeto ou repetir as atividades Android para completar a documentação.
+
+Para repetir essa configuração **no Cloud**, se necessário:
+
+```bash
+cd /workspace/UNIP-Desenvolvimento-Mobile
+python testes/preparar_display_local.py
+export APT_CONFIG="$PWD/.ferramentas/apt/apt.conf"
+apt-get update
+apt-get --download-only --yes install xvfb xdotool x11-xkb-utils xkb-data
+mkdir -p .ferramentas/gui
+for pacote in .ferramentas/apt/cache/archives/*.deb; do
+  dpkg-deb -x "$pacote" .ferramentas/gui
+done
+python testes/preparar_android_studio.py
+# Iniciar somente se :99 não estiver em uso:
+.ferramentas/gui/usr/bin/Xvfb :99 -screen 0 1440x1000x24 -nolisten tcp -ac
+# Em outro terminal do mesmo Cloud:
+bash testes/iniciar_android_studio.sh
+```
+
+O download-only não instala pacotes no sistema; os índices assinados e hashes dos pacotes permanecem verificados. Não atualize AGP/Gradle nem migre os fontes para repetir uma captura. Não inserir login Google: a IDE funciona sem ele.
+
+Oito atividades estão tecnicamente completas. Antes de entregar, preencher identificação real e conferir o DOCX no editor escolhido. A tentativa de renderização adicional de Word por LibreOffice extraído falhou no bootstrap UNO; os PDFs tiveram paginação efetivamente verificada.

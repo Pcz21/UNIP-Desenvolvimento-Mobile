@@ -1,0 +1,11 @@
+{
+  "programa": "Android Studio Rabbit 2 | 2026.2.2",
+  "distribuicao_verificada": "testes/android-studio-distribuicao.json",
+  "display": "Xvfb :99, 1440x1000, Java2D OpenGL desativado",
+  "projeto": "android-nativo existente, sem recriação ou alteração de fontes",
+  "resultado": "Projeto aberto, árvore expandida e MainActivity.java exibida; sincronização Gradle concluída",
+  "captura": "evidencias/relatorio01/02-android-studio-estrutura.png",
+  "sha256": "3394fb6a367fd4dfcccf0b163290b9a25e6d756deaa8e7ca0a3eaf0153e31bbd",
+  "metodo": "Pillow ImageGrab do servidor X11 real; sem montagem ou geração de imagem",
+  "compilacao_android_refeita": false
+}

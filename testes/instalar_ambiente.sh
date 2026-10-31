@@ -7,5 +7,7 @@ sdkmanager --sdk_root="$ANDROID_HOME" 'platform-tools' 'platforms;android-35' 'b
 printf 'sdk.dir=%s\n' "$ANDROID_HOME" > android-nativo/local.properties
 cd android-nativo
 ./gradlew --no-daemon assembleDebug lintDebug
-# Flutter continua separado até a política permitir storage.googleapis.com.
-# Depois: python testes/preparar_flutter.py && bash testes/flutter_validar.sh
+# Flutter está validado; preparar o SDK e repetir as verificações se necessário.
+cd /workspace/UNIP-Desenvolvimento-Mobile
+python testes/preparar_flutter.py
+bash testes/flutter_validar.sh

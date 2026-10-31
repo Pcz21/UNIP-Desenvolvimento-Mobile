@@ -1,9 +1,7 @@
-# Android Studio — verificação de disponibilidade
+# Android Studio — situação atual
 
-- Não há executável Android Studio instalado no ambiente inspecionado.
-- Não há `DISPLAY` configurado, `Xvfb`, `xvfb-run` ou `xdotool` disponíveis.
-- Pillow tem suporte XCB, mas isso não fornece um servidor gráfico.
-- `/var/lib/apt/lists` está vazio. A consulta `apt-cache policy xvfb` não identificou pacote preparado e reportou arquivo de configuração de APT sem permissão de leitura. Nenhum pacote de sistema foi instalado e não houve alterações de configuração fora do projeto.
-- Os metadados públicos de atualização em `dl.google.com/android/studio/patches/updates.xml` responderam HTTP 200, mas remetem ao site `developer.android.com` para o instalador. Esse domínio consta do rascunho de rede e ainda não integra a política aplicada.
+A limitação inicial foi superada nesta retomada. Android Studio Rabbit 2 | 2026.2.2 foi verificado por SHA-256 oficial e executado em Xvfb :99, com Java2D OpenGL desativado. O projeto existente foi aberto e sincronizado; Manifest, Java, layouts, valores e Gradle foram expostos na árvore, ao lado de MainActivity.java.
 
-**Conclusão limitada:** a IDE gráfica não foi preparada nem executada nesta sessão. Não se afirma que seja impossível configurá-la futuramente. A execução real do aplicativo por emulador foi obtida e documentada separadamente. Falta o print obrigatório da IDE e da estrutura explorada nela; coletar em um Android Studio disponível no laboratório, ou após preparar uma sessão gráfica autorizada no Cloud. Não usar captura de código, de build ou do emulador como se fosse a IDE.
+Captura autêntica: `evidencias/relatorio01/02-android-studio-estrutura.png`. Registro: `android-studio-evidencia.json`. A imagem foi incorporada ao Relatório 1 e ao consolidado. Os 16 prints Android anteriores e os arquivos versionados do projeto nativo foram preservados.
+
+Os pacotes Debian foram apenas baixados/verificados e extraídos em `.ferramentas/`. Não foram instalados pacotes de sistema. Login Google, telemetria e atualizações do projeto não foram necessários.

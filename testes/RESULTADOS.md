@@ -17,15 +17,27 @@ O emulador API 30 x86_64 executa por software, sem `/dev/kvm`. O boot levou apro
 
 Cada teste funcional concluído gera `android-funcional-NN.json` com os resultados conferidos via UI Automator. Os PNG só são gravados após a presença do texto esperado na árvore da tela. Os arquivos JSON e `CHECKLIST_GERAL.md` são a fonte para as quantidades finais de testes e capturas. A presença apenas de um arquivo de teste não representa aprovação.
 
-## Flutter
+## Flutter — retomada concluída
 
-**Não compilado, não executado, sem captura real nesta versão.** O download do SDK de `storage.googleapis.com` recebeu HTTP 403 do proxy de rede. A configuração adicional está salva no rascunho do ambiente, mas não foi aplicada/publicada pelo usuário. Os testes de widget e de lógica estão escritos, não executados. Nenhuma implementação HTML foi usada para simular Flutter.
+SDK Flutter 3.35.7 / Dart 3.9.2 baixado do Google e verificado pelo SHA-256 oficial. O bloqueio anterior foi superado após publicação do ambiente; também foi corrigido um segmento extra no URL antigo do manifesto.
+
+- Relatório 3: `pub get`, `analyze`, 1 teste de widget e `build web` aprovados. No Chromium, 5 verificações funcionais passaram: tela inicial, campos vazios, e-mail inválido, boas-vindas e limpeza da senha. Duas capturas reais incorporadas.
+- Relatório 8: `pub get`, `analyze`, 2 testes de lógica/widget e `build web` aprovados. No Chromium, Fraca, Média, Forte e limpeza do campo passaram. Três capturas reais incorporadas; valores de teste fictícios e campo oculto.
+- A automação do login teve falhas iniciais de seleção/sincronização do input semântico. Foram diagnosticadas e corrigidas com eventos reais de teclado, sem alterar o aplicativo ou desativar assertivas. Os logs de tentativa e o resultado final permanecem separados.
+- O build emitiu um aviso de fonte Cupertino opcional, não utilizada nas telas; análise, testes e build terminaram aprovados e os ícones Material foram conferidos nas capturas reais. Não foram adicionadas dependências externas de aplicação.
+
+## Android Studio — nova evidência da IDE
+
+Android Studio Rabbit 2 | 2026.2.2 baixado do Google com SHA-256 publicado em Android Developers. Pacotes Xvfb/xdotool assinados do Debian foram extraídos em `.ferramentas/`, sem instalação de sistema. O projeto existente abriu e sincronizou; a árvore foi expandida e MainActivity.java exibida. A captura real X11 está no Relatório 1. Fontes Android e os 16 PNG de `3988be1` foram preservados; não se repetiram atividades nativas. Os 15 testes puros Java disponíveis passaram novamente, em `java-regras-retomada.log`.
 
 ## Documentos
 
-Oito DOCX/PDF individuais e um consolidado de cada formato são gerados de fontes comuns em `relatorios/fontes/`. O verificador `verificar_entrega.py` abre os arquivos, confere limites de páginas dos PDFs e compara as imagens incorporadas com os PNG de origem. O DOCX é conferido estruturalmente; não foi renderizado no Microsoft Word. O resultado final desse verificador está em `entrega-verificacao.json` quando aprovado.
+Oito DOCX/PDF individuais e um consolidado de cada formato são gerados de fontes comuns em `relatorios/fontes/`. O verificador `verificar_entrega.py` abre os arquivos, confere limites de páginas dos PDFs e compara as imagens incorporadas com os PNG de origem. O DOCX foi aberto por python-docx e conferido estruturalmente. A tentativa adicional de renderizar com LibreOffice local falhou no bootstrap UNO; não foi declarada aprovação dessa etapa. A paginação dos PDFs e as imagens foram verificadas. O resultado final desse verificador está em `entrega-verificacao.json` quando aprovado.
 
 As referências externas registradas em `referencias-verificadas.json` responderam HTTP 200. Foram consultados Dart, código e documentação de API do Flutter e Android Open Source Project e orientações OWASP, além dos materiais UNIP. O registro preserva a data real da consulta, sem inventar data acadêmica.
+
+
+
 
 
 
@@ -36,7 +48,7 @@ As referências externas registradas em `referencias-verificadas.json` responder
 
 |Relatório|Teste de interface|Capturas reais|
 |---|---|---|
-|01|Aprovado: 1 verificações reais (android)|1|
+|01|Aprovado: 1 verificações reais (android)|2|
 |02|Aprovado: 3 verificações reais (android)|2|
 |03|Aprovado: 5 verificações reais (flutter)|2|
 |04|Aprovado: 5 verificações reais (android)|4|
@@ -45,4 +57,4 @@ As referências externas registradas em `referencias-verificadas.json` responder
 |07|Aprovado: 5 verificações reais (android)|4|
 |08|Aprovado: 4 verificações reais (flutter)|3|
 
-Total: **29 verificações de interface aprovadas e 21 PNG reais**. As 15 verificações Java de regras e os testes Flutter são conjuntos separados. Consulte o checklist para pendências particulares.
+Total: **29 verificações de interface aprovadas e 22 PNG reais**. As 15 verificações Java de regras e os testes Flutter são conjuntos separados. Consulte o checklist para pendências particulares.

@@ -2,7 +2,7 @@
 
 Oito atividades práticas da disciplina **Desenvolvimento Mobile**, com base nos dois documentos oficiais fornecidos. Não inclui disciplinas .NET ou Banco de Dados.
 
-**Estado real da entrega:** consulte [CHECKLIST_GERAL.md](CHECKLIST_GERAL.md), [PENDENCIAS_REAIS.md](PENDENCIAS_REAIS.md) e [testes/RESULTADOS.md](testes/RESULTADOS.md). Código e documento gerados não comprovam execução. Onde não houver captura autêntica, o relatório registra **EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA**.
+**Estado real da entrega:** oito atividades tecnicamente concluídas, 22 capturas reais incorporadas e 24 páginas no PDF consolidado. Identificação acadêmica a preencher; renderização de DOCX no editor final ainda deve ser conferida. Consulte [CHECKLIST_GERAL.md](CHECKLIST_GERAL.md), [PENDENCIAS_REAIS.md](PENDENCIAS_REAIS.md) e [testes/RESULTADOS.md](testes/RESULTADOS.md). Código e documento gerados não comprovam execução. Onde não houver captura autêntica, o relatório registra **EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA**.
 
 ## Arquivos principais
 
@@ -42,13 +42,13 @@ Cada aplicação tem `pubspec.yaml`, `lib/main.dart`, configuração web e teste
 - **Login:** MaterialApp, Scaffold, TextField e ElevatedButton, com mensagem de boas-vindas e validação didática.
 - **Senhas:** Fraca nos demais casos; Média a partir de 8 pontos de código e duas classes; Forte a partir de 12 e quatro classes. Classes: minúsculas ASCII, maiúsculas ASCII, dígitos e símbolos (exceto espaços). Campo vazio solicita entrada. A heurística não mede entropia ou vazamentos. Senhas não são gravadas nem registradas nos logs.
 
-O script `testes/preparar_flutter.py` prepara Flutter 3.35.7 com SHA-256 do manifesto oficial. Consulte as pendências de rede antes de usá-lo. **Não há afirmação de compilação ou teste Flutter enquanto os logs não comprovarem os comandos.**
+O script `testes/preparar_flutter.py` prepara Flutter 3.35.7 / Dart 3.9.2 com SHA-256 do manifesto oficial. **Ambos os projetos passaram em analyze, testes, build web e execução real no Chromium**. Registros: `testes/flutter-validacao-03.json`, `flutter-validacao-08.json` e `flutter-funcional-03.json` / `08.json`. Os arquivos `pubspec.lock` preservam as dependências resolvidas.
 
 ## Relatórios e evidências
 
 Os relatórios têm identificação acadêmica a preencher, teoria específica, implementação, resultados reais, conclusão e referências verificadas em formato ABNT. O código integral é entregue como arquivo separado no projeto para respeitar o limite de páginas. O consolidado contém capa e os oito relatórios; não substitui as entregas individuais.
 
-As fontes JSON são a versão editável usada por `python testes/gerar_relatorios.py`. O script sobrescreve DOCX/PDF: preserve alterações manuais feitas no Word antes de regenerar. O verificador compara imagens dos documentos com os PNG originais e confere os limites de páginas dos PDFs. Sem execução aprovada, não cria imagens para preencher espaços.
+As fontes JSON são a versão editável usada por `python testes/gerar_relatorios.py`. O script sobrescreve DOCX/PDF: preserve alterações manuais feitas no Word antes de regenerar. O verificador compara imagens dos documentos com os PNG originais, preserva os hashes dos 16 prints de referência e confere os limites de páginas dos PDFs. A captura de Android Studio está em `evidencias/relatorio01/02-android-studio-estrutura.png`; foi obtida na IDE oficial com o projeto existente em Xvfb, sem aceleração por hardware. Sem execução aprovada, não cria imagens para preencher espaços.
 
 ## Segurança e autoria das evidências
 

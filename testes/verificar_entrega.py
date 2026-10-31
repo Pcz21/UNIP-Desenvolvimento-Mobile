@@ -15,6 +15,10 @@ def imgs(meta):
    if kind=='image':out.append(value['path'])
    if kind=='grid':out.extend(item['path'] for item in value)
  return out
+baseline=json.loads((R/'testes/android-original-sha256.json').read_text())
+for original,expected_hash in baseline['imagens'].items():
+ assert hashlib.sha256((R/original).read_bytes()).hexdigest()==expected_hash,original+' foi alterado'
+assert len(baseline['imagens'])==16
 results=[];all_images=[]
 for n in ['01','02','03','04','05','06','07','08']:
  m=json.loads((R/f'relatorios/fontes/relatorio{n}.json').read_text());paths=imgs(m);all_images+=paths
@@ -50,6 +54,6 @@ with ZipFile(R/'relatorios/word/consolidado.docx') as z:
 for p in ['CHECKLIST_GERAL.md','README.md','PENDENCIAS_REAIS.md','LEVAR_PARA_FACULDADE.md','artefatos/unip-mobile-debug.apk']:
  assert (R/p).is_file(),p
 for official,pages in [('Roteiro.dev.mobile.pdf',17),('Relatório.dev.mobile.pdf',13)]:assert len(fitz.open(R/'documentos_oficiais'/official))==pages
-output={'documentos':results,'consolidado_paginas':len(pdf),'verificacao':'aprovada','limite':'DOCX verificado estruturalmente, sem renderização no Microsoft Word; paginação visual deve ser revisada ao abrir no laboratório.'}
+output={'documentos':results,'consolidado_paginas':len(pdf),'verificacao':'aprovada','estrutura_docx':'aprovada','renderizacao_docx':'não concluída: falha de bootstrap UNO do LibreOffice local','pdf_renderizado':'aprovado','imagens_totais':len(all_images),'originais_android_preservados':16,'limite':'DOCX aberto estruturalmente e imagens conferidas; renderização adicional por LibreOffice local falhou no contexto UNO. PDF renderizado, com paginação verificada.'}
 (R/'testes/entrega-verificacao.json').write_text(json.dumps(output,ensure_ascii=False,indent=2))
 print(json.dumps(output,ensure_ascii=False,indent=2))

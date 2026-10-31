@@ -2,7 +2,7 @@
 
 |Relatório|Teste de interface|Capturas reais|
 |---|---|---|
-|01|Aprovado: 1 verificações reais (android)|1|
+|01|Aprovado: 1 verificações reais (android)|2|
 |02|Aprovado: 3 verificações reais (android)|2|
 |03|Aprovado: 5 verificações reais (flutter)|2|
 |04|Aprovado: 5 verificações reais (android)|4|
@@ -11,5 +11,5 @@
 |07|Aprovado: 5 verificações reais (android)|4|
 |08|Aprovado: 4 verificações reais (flutter)|3|
 
-Total: **29 verificações de interface aprovadas e 21 PNG reais**. As 15 verificações Java de regras e os testes Flutter são conjuntos separados. Consulte o checklist para pendências particulares.
+Total: **29 verificações de interface aprovadas e 22 PNG reais**. As 15 verificações Java de regras e os testes Flutter são conjuntos separados. Consulte o checklist para pendências particulares.
 

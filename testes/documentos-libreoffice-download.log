@@ -1,0 +1,86 @@
+Reading package lists...
+Building dependency tree...
+The following additional packages will be installed:
+  fonts-opensymbol libabw-0.1-1 libargon2-1 libclucene-contribs1t64
+  libclucene-core1t64 libcmis-0.6-6t64 libe-book-0.1-1 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libexttextcat-2.0-0 libexttextcat-data
+  libharfbuzz-icu0 libhyphen0 liblangtag-common liblangtag1 libmhash2
+  libmwaw-0.3-3 libmythes-1.2-0 libnumbertext-1.0-0 libnumbertext-data
+  libodfgen-0.1-1 liborcus-0.18-0 liborcus-parser-0.18-0 librasqal3t64
+  librdf0t64 libreoffice-base-core libreoffice-common libreoffice-core
+  libreoffice-style-colibre libreoffice-uiconfig-common
+  libreoffice-uiconfig-writer libstaroffice-0.0-0 libuno-cppu3t64
+  libuno-cppuhelpergcc3-3t64 libuno-purpenvhelpergcc3-3t64 libuno-sal3t64
+  libuno-salhelpergcc3-3t64 libwps-0.4-4 libxmlsec1t64 libxmlsec1t64-nss
+  libzxcvbn0 uno-libs-private ure
+Suggested packages:
+  rasqal-utils librdf-storage-mysql librdf-storage-postgresql
+  librdf-storage-sqlite librdf-storage-virtuoso redland-utils libreoffice-base
+  python3-scriptforge fonts-crosextra-caladea fonts-crosextra-carlito
+  libreoffice-java-common default-jre | java-runtime | java8-runtime | jre
+Recommended packages:
+  apparmor python3-uno gstreamer1.0-libav libreoffice-math
+The following NEW packages will be installed:
+  fonts-opensymbol libabw-0.1-1 libargon2-1 libclucene-contribs1t64
+  libclucene-core1t64 libcmis-0.6-6t64 libe-book-0.1-1 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libexttextcat-2.0-0 libexttextcat-data
+  libharfbuzz-icu0 libhyphen0 liblangtag-common liblangtag1 libmhash2
+  libmwaw-0.3-3 libmythes-1.2-0 libnumbertext-1.0-0 libnumbertext-data
+  libodfgen-0.1-1 liborcus-0.18-0 liborcus-parser-0.18-0 librasqal3t64
+  librdf0t64 libreoffice-base-core libreoffice-common libreoffice-core
+  libreoffice-style-colibre libreoffice-uiconfig-common
+  libreoffice-uiconfig-writer libreoffice-writer libstaroffice-0.0-0
+  libuno-cppu3t64 libuno-cppuhelpergcc3-3t64 libuno-purpenvhelpergcc3-3t64
+  libuno-sal3t64 libuno-salhelpergcc3-3t64 libwps-0.4-4 libxmlsec1t64
+  libxmlsec1t64-nss libzxcvbn0 uno-libs-private ure
+0 upgraded, 45 newly installed, 0 to remove and 7 not upgraded.
+Need to get 84.9 MB of archives.
+After this operation, 280 MB of additional disk space will be used.
+Get:1 https://deb.debian.org/debian trixie/main amd64 libreoffice-style-colibre all 4:25.2.3-2+deb13u6 [7330 kB]
+Get:2 https://deb.debian.org/debian trixie/main amd64 libreoffice-uiconfig-common all 4:25.2.3-2+deb13u6 [385 kB]
+Get:3 https://deb.debian.org/debian trixie/main amd64 libuno-sal3t64 amd64 4:25.2.3-2+deb13u6 [218 kB]
+Get:4 https://deb.debian.org/debian trixie/main amd64 libuno-salhelpergcc3-3t64 amd64 4:25.2.3-2+deb13u6 [53.1 kB]
+Get:5 https://deb.debian.org/debian trixie/main amd64 libuno-cppu3t64 amd64 4:25.2.3-2+deb13u6 [119 kB]
+Get:6 https://deb.debian.org/debian trixie/main amd64 uno-libs-private amd64 4:25.2.3-2+deb13u6 [238 kB]
+Get:7 https://deb.debian.org/debian trixie/main amd64 liblangtag-common all 0.6.7-1 [191 kB]
+Get:8 https://deb.debian.org/debian trixie/main amd64 liblangtag1 amd64 0.6.7-1+b2 [51.2 kB]
+Get:9 https://deb.debian.org/debian trixie/main amd64 libuno-cppuhelpergcc3-3t64 amd64 4:25.2.3-2+deb13u6 [320 kB]
+Get:10 https://deb.debian.org/debian trixie/main amd64 libuno-purpenvhelpergcc3-3t64 amd64 4:25.2.3-2+deb13u6 [51.8 kB]
+Get:11 https://deb.debian.org/debian trixie/main amd64 ure amd64 4:25.2.3-2+deb13u6 [1251 kB]
+Get:12 https://deb.debian.org/debian trixie/main amd64 libnumbertext-data all 1.0.11-4 [70.4 kB]
+Get:13 https://deb.debian.org/debian trixie/main amd64 libreoffice-common all 4:25.2.3-2+deb13u6 [21.7 MB]
+Get:14 https://deb.debian.org/debian trixie/main amd64 fonts-opensymbol all 4:102.12+LibO25.2.3-2+deb13u6 [128 kB]
+Get:15 https://deb.debian.org/debian trixie/main amd64 libargon2-1 amd64 0~20190702+dfsg-4+b2 [21.4 kB]
+Get:16 https://deb.debian.org/debian trixie/main amd64 libclucene-core1t64 amd64 2.3.3.4+dfsg-1.2+b1 [512 kB]
+Get:17 https://deb.debian.org/debian trixie/main amd64 libclucene-contribs1t64 amd64 2.3.3.4+dfsg-1.2+b1 [84.4 kB]
+Get:18 https://deb.debian.org/debian trixie/main amd64 libcmis-0.6-6t64 amd64 0.6.2-2.1+b1 [442 kB]
+Get:19 https://deb.debian.org/debian trixie/main amd64 libeot0 amd64 0.01-5+b2 [27.2 kB]
+Get:20 https://deb.debian.org/debian trixie/main amd64 libexttextcat-data all 3.4.7-1 [176 kB]
+Get:21 https://deb.debian.org/debian trixie/main amd64 libexttextcat-2.0-0 amd64 3.4.7-1+b1 [14.3 kB]
+Get:22 https://deb.debian.org/debian trixie/main amd64 libharfbuzz-icu0 amd64 10.2.0-1+deb13u1 [15.5 kB]
+Get:23 https://deb.debian.org/debian trixie/main amd64 libhyphen0 amd64 2.8.8-7+b2 [30.7 kB]
+Get:24 https://deb.debian.org/debian trixie/main amd64 libmythes-1.2-0 amd64 2:1.2.5-1+b2 [10.8 kB]
+Get:25 https://deb.debian.org/debian trixie/main amd64 libnumbertext-1.0-0 amd64 1.0.11-4+b2 [109 kB]
+Get:26 https://deb.debian.org/debian trixie/main amd64 liborcus-parser-0.18-0 amd64 0.19.2-6+b1 [116 kB]
+Get:27 https://deb.debian.org/debian trixie/main amd64 liborcus-0.18-0 amd64 0.19.2-6+b1 [432 kB]
+Get:28 https://deb.debian.org/debian trixie/main amd64 libmhash2 amd64 0.9.9.9-10 [92.4 kB]
+Get:29 https://deb.debian.org/debian trixie/main amd64 librasqal3t64 amd64 0.9.33-2.1+b2 [191 kB]
+Get:30 https://deb.debian.org/debian trixie/main amd64 librdf0t64 amd64 1.0.17-4+b1 [107 kB]
+Get:31 https://deb.debian.org/debian trixie/main amd64 libxmlsec1t64 amd64 1.2.41-1+b1 [155 kB]
+Get:32 https://deb.debian.org/debian trixie/main amd64 libxmlsec1t64-nss amd64 1.2.41-1+b1 [66.0 kB]
+Get:33 https://deb.debian.org/debian trixie/main amd64 libzxcvbn0 amd64 2.5+dfsg-2+b2 [860 kB]
+Get:34 https://deb.debian.org/debian trixie/main amd64 libreoffice-core amd64 4:25.2.3-2+deb13u6 [32.2 MB]
+Get:35 https://deb.debian.org/debian trixie/main amd64 libreoffice-base-core amd64 4:25.2.3-2+deb13u6 [800 kB]
+Get:36 https://deb.debian.org/debian trixie/main amd64 libreoffice-uiconfig-writer all 4:25.2.3-2+deb13u6 [301 kB]
+Get:37 https://deb.debian.org/debian trixie/main amd64 libabw-0.1-1 amd64 0.1.3-1+b2 [124 kB]
+Get:38 https://deb.debian.org/debian trixie/main amd64 libe-book-0.1-1 amd64 0.1.3-2+b4 [205 kB]
+Get:39 https://deb.debian.org/debian trixie/main amd64 libepubgen-0.1-1 amd64 0.1.1-1+b2 [156 kB]
+Get:40 https://deb.debian.org/debian trixie/main amd64 libetonyek-0.1-1 amd64 0.1.12-1 [840 kB]
+Get:41 https://deb.debian.org/debian trixie/main amd64 libmwaw-0.3-3 amd64 0.3.22-1+b2 [2840 kB]
+Get:42 https://deb.debian.org/debian trixie/main amd64 libodfgen-0.1-1 amd64 0.1.8-2+b2 [313 kB]
+Get:43 https://deb.debian.org/debian trixie/main amd64 libstaroffice-0.0-0 amd64 0.0.7-1+b2 [735 kB]
+Get:44 https://deb.debian.org/debian trixie/main amd64 libwps-0.4-4 amd64 0.4.14-2+b2 [913 kB]
+Get:45 https://deb.debian.org/debian trixie/main amd64 libreoffice-writer amd64 4:25.2.3-2+deb13u6 [9851 kB]
+Fetched 84.9 MB in 4s (22.6 MB/s)
+Download complete and in download only mode
+W: Unable to read /workspace/UNIP-Desenvolvimento-Mobile/.ferramentas/apt/etc/preferences.d/ - DirectoryExists (2: No such file or directory)

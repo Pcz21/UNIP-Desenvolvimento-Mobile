@@ -1,10 +1,19 @@
 # Pendências reais — Desenvolvimento Mobile
 
-1. **Flutter (relatórios 3 e 8):** permitir `storage.googleapis.com` na política do ambiente. Os domínios já estão salvos no rascunho, juntamente com documentação e recursos Flutter; a política em execução ainda não os inclui. Revisar/salvar nas configurações e publicar conforme a interface. Então executar a instalação, análise, testes e build; abrir os aplicativos e obter capturas autênticas. Os DOCX/PDF estão preenchidos, mas parciais e sem imagens simuladas.
-2. **Android Studio (relatório 1):** a IDE não foi aberta no Cloud. Falta captura real de sua interface e da estrutura do projeto explorada nela. O APK compilado e uma captura do aplicativo no emulador não substituem essa evidência obrigatória.
-3. **Android: cobertura verificada:** as seis Activities nativas passaram em 20 verificações de interface no emulador API 30, com 16 PNG incorporados. A cobertura não inclui todas as versões Android ou dispositivos físicos. A primeira tentativa por software falhou por aviso do System UI; após recuperação os testes foram aprovados. Reexecutar em emulador/dispositivo autorizado se a instabilidade reaparecer.
-4. **Identificação acadêmica:** preencher nome, RA, polo, local e data acadêmica reais em todos os documentos. A execução remota não é participação presencial. Nenhum dado pessoal foi inventado.
-5. **Paginação DOCX:** os PDF têm paginação verificada automaticamente; os DOCX foram abertos estruturalmente, mas não renderizados no Microsoft Word/LibreOffice. Conferir visualmente ao abrir, preservando R1 com 1–2 páginas e R2–R8 com 2–3.
-6. **Entrega acadêmica:** confirmar com o docente formato de entrega e aceitação do Flutter web/DartPad. Os pesos distintos dos dois PDFs estão preservados no checklist. Não considerar o relatório concluído enquanto faltar evidência obrigatória.
+## Situação técnica
 
-Não há dependência de servidor, banco de dados ou credencial de autenticação para estes exercícios. O problema Flutter é a política de download, não a ausência de token GitHub. Para continuidade e testes de laboratório, consulte `LEVAR_PARA_FACULDADE.md`.
+As oito implementações e os oito relatórios possuem as evidências obrigatórias de execução. Os relatórios 3 e 8 foram compilados, testados e executados como Flutter web real; o Relatório 1 recebeu uma captura autêntica do Android Studio com o projeto existente. Não há pendência de código, execução ou captura exigida nos roteiros.
+
+Há **22 PNG reais incorporados em DOCX/PDF**, incluindo os 16 PNG Android do commit `3988be1`, preservados byte a byte. Os arquivos Android versionados não foram alterados; suas atividades concluídas não foram refeitas.
+
+## Antes da entrega acadêmica
+
+1. **Identificação pessoal:** preencher nome, RA, polo, local e data acadêmica reais. Esses dados não foram fornecidos e permanecem como `[PREENCHER]`. O trabalho remoto não comprova participação presencial.
+2. **DOCX no editor final:** os nove arquivos foram abertos estruturalmente por python-docx, tiveram ZIP e imagens incorporadas conferidos. A tentativa adicional de renderização com LibreOffice extraído no Cloud falhou no bootstrap UNO (`DeploymentException`/`RuntimeException`), sem instalação de sistema. Portanto, não se afirma que houve renderização no Microsoft Word ou LibreOffice. Confira a aparência e a paginação ao abrir no editor de entrega. Os **PDFs foram renderizados e verificados**, com R1 em 2 páginas, R2–R8 em 3 páginas e consolidado em 24 páginas.
+3. **Forma de entrega e prazo:** confirmar com o docente a entrega individual ou consolidada, o prazo não informado e a adequação da execução Flutter web/DartPad. Os dois PDFs oficiais têm rubricas distintas, preservadas no checklist.
+
+## Limites documentados, sem exigir novos testes para estes roteiros
+
+Os testes nativos anteriores usam Android API 30; não se afirma cobertura de todos os dispositivos e versões. Os novos testes Flutter usam Chromium, além das suítes de widget/lógica. O classificador de senhas é uma heurística didática e o login não autentica em servidor.
+
+Nenhuma imagem foi fabricada e nenhuma senha pessoal foi utilizada. O ambiente não foi republicado pelo agente; a entrega está preservada em commits na branch `main`.

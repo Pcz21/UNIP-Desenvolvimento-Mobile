@@ -2,6 +2,9 @@
 set -euo pipefail
 PROJETO_MOBILE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 export PATH="$PROJETO_MOBILE/.ferramentas/flutter/bin:$PATH"
+export XDG_CONFIG_HOME="$PROJETO_MOBILE/.ferramentas/config"
+export FLUTTER_SUPPRESS_ANALYTICS=true
+export DART_SUPPRESS_ANALYTICS=true
 export PUB_CACHE="$PROJETO_MOBILE/.ferramentas/pub-cache"
 # Somente dados de teste fictícios. Não registrar entradas de senha.
 for alvo in relatorio03-login relatorio08-senhas; do

@@ -1,3 +1,5 @@
+REGISTRO HISTÓRICO SUPERADO: o download e os testes Flutter foram concluídos na retomada. Consulte flutter-sdk.json e os registros flutter-validacao-03/08.json.
+
 Operação tentada: leitura do manifesto oficial para instalar Flutter.
 URL: https://storage.googleapis.com/flutter_infra_release/flutter/releases/releases_linux.json
 Resultado observado no proxy HTTPS: URLError: Tunnel connection failed: 403 Forbidden.

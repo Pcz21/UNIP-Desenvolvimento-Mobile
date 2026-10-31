@@ -13,10 +13,18 @@ Use o checkout existente em `/workspace/UNIP-Desenvolvimento-Mobile`: cada taref
 7. Instale com `adb install -r android-nativo/app/build/outputs/apk/debug/app-debug.apk`. Execute `python testes/android_funcional.py NN` para 01, 02, 04, 05, 06 ou 07, uma atividade por vez. Cada JSON comprova resultados daquele teste; screenshots só são aceitos após confirmar a interface.
 8. Após cada atividade aprovada: `python testes/incorporar_evidencias.py NN`, `python testes/gerar_relatorios.py`, `python testes/atualizar_status.py` e `python testes/verificar_entrega.py`. Não apague preferências entre salvar e reabrir no teste 6. Não declare print da IDE a partir do emulador.
 
-## Flutter — pendência externa explícita
+## Flutter — SDK e execução concluídos
 
-O download oficial recebeu 403 de `storage.googleapis.com`. Há domínios adicionais no rascunho para revisão; a política atual não foi alterada por esse salvamento. Não tente contornar o proxy. Depois de a configuração ser aplicada, teste o acesso novamente; então execute `python testes/preparar_flutter.py` e `bash testes/flutter_validar.sh`. O script fixa Flutter 3.35.7 e verifica SHA-256 oficial. Preserve TLS e checksums.
+Flutter 3.35.7 / Dart 3.9.2 estão em `.ferramentas/flutter`; os dois projetos têm pubspec.lock e validação aprovada. Se faltar o SDK numa nova máquina, execute `python testes/preparar_flutter.py`, que verifica SHA-256 oficial. Configure `PATH`, `PUB_CACHE` e `XDG_CONFIG_HOME` conforme `testes/flutter_validar.sh`. Não contorne proxy ou verificação TLS.
 
-Para iniciar um app: exporte `PATH="$PWD/.ferramentas/flutter/bin:$PATH"` e `PUB_CACHE="$PWD/.ferramentas/pub-cache"`, entre em `flutter/relatorio03-login` ou `flutter/relatorio08-senhas` e use `flutter run -d web-server --web-hostname 127.0.0.1 --web-port 8763`. Alternativamente, sirva `build/web` após build aprovado. Use Chromium para testes e PNG reais; não apresente links localhost como prévias públicas. DartPad no navegador pessoal é a alternativa sem instalação.
+Para repetir somente a validação Flutter: `bash testes/flutter_validar.sh`; registre cada alvo com `python testes/registrar_flutter.py 03` e `08`. Para execução e captura reais: `python testes/flutter_capturas.py 03` ou `08`; a automação serve o build web e usa teclado real no Chromium. Em seguida execute `python testes/incorporar_flutter.py NN`, regenere os documentos e valide-os. Não interprete código de teste existente como aprovação de uma nova rodada.
 
-Não declare testes Flutter aprovados só porque o código existe. Incorpore PNG autêntico e legenda nas fontes JSON de cada relatório, regenere e confira DOCX/PDF. Use apenas dados fictícios. Nenhum segredo ou senha pessoal deve ser gravado.
+## Android Studio em display virtual
+
+A IDE foi executada de verdade e a captura já está incorporada ao Relatório 1. Distribuição: `testes/preparar_android_studio.py`, com hash oficial. O Xvfb e xdotool ficam em `.ferramentas/gui`, extraídos de pacotes Debian assinados. O script `testes/preparar_display_local.py` prepara uma configuração APT inteiramente local; consulte os logs de download e o guia no repositório.
+
+Inicie o display :99 somente se não estiver ativo e, depois, use `bash testes/iniciar_android_studio.sh`. O script aponta configurações/cache para `.ferramentas/`, desativa Java2D OpenGL e abre o projeto existente. Não crie projeto novo nem atualize AGP/Gradle para repetir a captura. Dispense login Google opcional; não é preciso inserir credenciais. A sincronização foi concluída sem alterar fontes Android.
+
+## Documentos
+
+`python testes/gerar_relatorios.py` sobrescreve DOCX/PDF a partir de `relatorios/fontes/`; preserve edições manuais antes de regenerar. `python testes/verificar_entrega.py` confere páginas PDF, abertura estrutural dos DOCX e imagens originais. A tentativa adicional de renderização DOCX com LibreOffice local falhou no bootstrap UNO; veja `testes/documentos-renderizacao.md`. Não declare essa etapa aprovada.

@@ -58,7 +58,7 @@
       ],
       [
         "p",
-        "Após liberar o SDK: executar flutter pub get, flutter analyze e flutter test. Compilar para web e abrir no navegador. Usar três entradas exclusivamente fictícias que atendam às regras e registrar cada rótulo. Verificar também retorno à instrução inicial ao apagar o campo. Não registrar senhas reais em logs, capturas ou relatórios."
+        "Para reproduzir no SDK instalado: executar flutter pub get, flutter analyze e flutter test. Compilar para web e abrir no navegador. Usar três entradas exclusivamente fictícias que atendam às regras e registrar cada rótulo. Verificar também retorno à instrução inicial ao apagar o campo. Não registrar senhas reais em logs, capturas ou relatórios."
       ],
       [
         "h",

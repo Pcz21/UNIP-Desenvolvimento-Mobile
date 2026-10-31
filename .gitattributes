@@ -1,0 +1,5 @@
+# Artefatos devem ser tratados como binários, inclusive PDFs ASCII do ReportLab.
+*.pdf binary
+*.docx binary
+*.png binary
+*.apk binary
