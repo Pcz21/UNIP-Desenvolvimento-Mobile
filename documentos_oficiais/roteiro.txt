@@ -1,0 +1,426 @@
+       Roteiros
+Desenvolvimento Mobile
+                                Disciplina: Desenvolvimento Mobile
+                            Título da aula: Conhecendo a Ferramenta      ROTEIRO 1
+                                           Android Studio
+
+
+
+    1. Objetivos da Aula
+     Compreender o papel do Android Studio no desenvolvimento mobile.
+     Conhecer os principais componentes da IDE.
+     Criar um projeto Android básico.
+     Executar o aplicativo em emulador ou dispositivo físico.
+
+
+    2. Recursos Necessários
+     Android Studio
+     JDK instalado
+     Emulador Android ou Smartphone
+     Projetor ou compartilhamento de tela
+
+
+    3. Estrutura da Aula
+    3.1 Apresentação do Tema
+     O que é Android Studio.
+     Principais funcionalidades da IDE.
+     Estrutura de um projeto Android.
+
+
+    3.2 Conexão com a Prática
+     Demonstração de aplicativos desenvolvidos para Android.
+
+
+2
+ Explicação do fluxo de desenvolvimento.
+
+
+3.3 Revisão Conceitual
+ Activity.
+ Layout XML.
+ Arquivos Gradle.
+ Emulador Android.
+
+
+3.4 Demonstração Técnica
+ Criação de um novo projeto.
+ Execução do projeto.
+ Navegação pela estrutura de diretórios.
+
+
+3.5 Atividade Prática
+ Criar um projeto Android.
+ Alterar o texto principal da aplicação.
+ Executar no emulador.
+
+
+3.6 Encerramento
+ Revisão dos conceitos.
+ Preparação para a criação de interfaces XML.
+
+
+4. Relatório Final
+ Print do Android Studio.
+ Estrutura do projeto criada.
+
+
+
+                                                 3
+     Descrição das principais pastas.
+
+
+    5. Critérios de Avaliação
+     Instalação e configuração correta – 3,0
+     Criação do projeto – 3,0
+     Execução do aplicativo – 2,0
+     Relatório – 2,0
+
+
+
+
+4
+                             Disciplina: Desenvolvimento Mobile
+                       Título da aula: Criando uma Tela de Login no An-   ROTEIRO 2
+                                  droid Studio utilizando XML
+
+
+
+1. Objetivos da Aula
+ Compreender o uso de layouts XML.
+ Criar uma interface de login.
+ Utilizar componentes visuais básicos.
+
+
+2. Recursos Necessários
+ Android Studio
+ Emulador Android
+
+
+3. Estrutura da Aula
+3.1 Apresentação
+ O que é XML.
+ Separação entre interface e lógica.
+
+
+3.2 Conexão com a Prática
+ Exemplos de telas de login.
+
+
+3.3 Revisão Guiada
+ TextView
+ EditText
+
+
+                                                                                      5
+     Button
+     LinearLayout
+
+
+    3.4 Demonstração Técnica
+     Construção da interface.
+     Ajuste de cores e espaçamentos.
+
+
+    3.5 Atividade Prática
+     Criar uma tela contendo:
+     Campo E-mail
+     Campo Senha
+     Botão Entrar
+     Título do sistema
+
+
+    3.6 Encerramento
+     Revisão da estrutura XML.
+
+
+    4. Relatório Final
+     Código XML.
+     Print da tela.
+     Explicação dos componentes.
+
+
+    5. Critérios de Avaliação
+     Estrutura XML – 3,0
+     Organização visual – 3,0
+
+
+
+6
+ Funcionamento – 2,0
+ Relatório – 2,0
+
+
+
+
+                        7
+                                Disciplina: Desenvolvimento Mobile
+                         Título da aula: Criando uma Tela de Login Simples   ROTEIRO 3
+                                       com Flutter e DartPad
+
+
+
+    1. Objetivos da Aula
+     Conhecer o framework Flutter.
+     Compreender a linguagem Dart.
+     Desenvolver uma interface simples.
+
+
+    2. Recursos Necessários
+     Navegador
+     DartPad
+     Flutter
+
+
+    3. Estrutura da Aula
+    3.1 Apresentação
+     O que é Flutter.
+     Vantagens do desenvolvimento multiplataforma.
+
+
+    3.2 Revisão Guiada
+     Widgets.
+     MaterialApp.
+     Scaffold.
+     TextField.
+     ElevatedButton.
+
+8
+3.3 Demonstração Técnica
+ Construção de tela de login.
+
+
+3.4 Atividade Prática
+ Criar:
+ Campo E-mail.
+ Campo Senha.
+ Botão Login.
+ Mensagem de boas-vindas.
+
+
+3.5 Encerramento
+ Comparação entre Android Nativo e Flutter.
+
+
+4. Relatório Final
+ Código Dart.
+ Captura da execução.
+ Explicação dos widgets utilizados.
+
+
+5. Critérios de Avaliação
+ Estrutura Flutter – 3,0
+ Uso correto dos widgets – 3,0
+ Funcionamento – 2,0
+ Relatório – 2,0
+
+
+
+
+                                               9
+                                  Disciplina: Desenvolvimento Mobile
+                            Título da aula: Criando um Menu Simples em XML   ROTEIRO 4
+                                          no Android Studio
+
+
+
+     1. Objetivos da Aula
+      Criar interfaces com múltiplas opções.
+      Organizar componentes visuais.
+
+
+     2. Recursos Necessários
+      Android Studio
+      Emulador Android
+
+
+     3. Atividade Prática
+      Desenvolver uma tela contendo:
+      Cadastro
+      Consultar
+      Configurações
+      Sair
+      Utilizando:
+      Botões
+      Ícones
+      Layout XML
+
+
+
+
+10
+4. Relatório Final
+ Código XML.
+ Print da tela criada.
+ Explicação do layout.
+
+
+5. Critérios de Avaliação
+ Organização da interface – 3,0
+ Utilização correta dos componentes – 3,0
+ Funcionamento – 2,0
+ Relatório – 2,0
+
+
+
+
+                                             11
+                                Disciplina: Desenvolvimento Mobile
+                               Título da aula: Criando um Aplicativo   ROTEIRO 5
+                                       Utilizando CheckBox
+
+
+
+
+     1. Objetivos da Aula
+      Trabalhar seleção de opções.
+      Capturar escolhas do usuário.
+
+
+     2. Atividade Prática
+     Criar um aplicativo contendo:
+     Pergunta:
+
+
+     Quais tecnologias você conhece?
+
+
+     Opções:
+      Java
+      Kotlin
+      Flutter
+      Python
+
+
+     Botão:
+      Verificar Resposta
+
+
+
+
+12
+3. Relatório Final
+ Código XML.
+ Código Java.
+ Print do aplicativo.
+
+
+4. Critérios de Avaliação
+ Uso correto do CheckBox – 4,0
+ Lógica implementada – 3,0
+ Interface – 2,0
+ Relatório – 1,0
+
+
+
+
+                                  13
+                                  Disciplina: Desenvolvimento Mobile
+                                 Título da aula: Criando um Aplicativo   ROTEIRO 6
+                                     Utilizando SharedPreferences
+
+
+
+     1. Objetivos da Aula
+      Compreender armazenamento local.
+      Salvar informações do usuário.
+
+
+     2. Atividade Prática
+      Criar um aplicativo que:
+      Receba o nome do usuário.
+      Salve o nome utilizando SharedPreferences.
+      Recupere o nome ao abrir novamente o aplicativo.
+
+
+     3. Relatório Final
+      Código desenvolvido.
+      Captura da execução.
+      Explicação do armazenamento local.
+
+
+     4. Critérios de Avaliação
+      Salvamento correto – 4,0
+      Recuperação dos dados – 3,0
+      Interface – 2,0
+      Relatório – 1,0
+
+
+14
+                             Disciplina: Desenvolvimento Mobile
+                            Título da aula: Criando um Aplicativo   ROTEIRO 7
+                             Utilizando Conceitos de Segurança
+
+
+
+1. Objetivos da Aula
+ Aplicar validações em formulários.
+ Compreender conceitos básicos de segurança.
+
+
+2. Atividade Prática
+ Criar uma tela que valide:
+ Campo vazio.
+ E-mail inválido.
+ Senha com menos de 6 caracteres.
+
+
+3. Relatório Final
+ Código desenvolvido.
+ Prints das validações.
+ Explicação dos conceitos aplicados.
+
+
+4. Critérios de Avaliação
+ Implementação das validações – 4,0
+ Funcionamento – 3,0
+ Interface – 2,0
+ Relatório – 1,0
+
+
+                                                                            15
+                                  Disciplina: Desenvolvimento Mobile
+                                Título da aula: Criando um Aplicativo   ROTEIRO 8
+                                   Verificador de Senha com Flutter
+
+
+
+     1. Objetivos da Aula
+      Utilizar Flutter para validação de dados.
+      Trabalhar entrada de texto e atualização de interface.
+
+
+     2. Recursos Necessários
+      Flutter
+      DartPad
+
+
+     3. Atividade Prática
+      Criar um aplicativo que:
+      Receba uma senha.
+      Analise seu tamanho.
+      Informe:
+      Senha Fraca
+      Senha Média
+      Senha Forte
+
+
+     4. Relatório Final
+      Código Dart.
+      Captura da aplicação em execução.
+
+
+16
+ Explicação da lógica utilizada.
+
+
+5. Critérios de Avaliação
+ Lógica de validação – 4,0
+ Interface Flutter – 3,0
+ Funcionamento – 2,0
+ Relatório – 1,0
+
+
+
+
+                                    17
+

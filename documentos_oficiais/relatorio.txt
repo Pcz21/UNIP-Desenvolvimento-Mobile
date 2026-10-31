@@ -1,0 +1,445 @@
+            DESENVOLVIMENTO MOBILE
+
+ ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+
+         RELATÓRIO DE AULAS PRÁTICAS
+
+
+Nome:
+
+
+RA:
+
+
+Polo de matrícula:
+
+
+Local da realização da Aula Prática:
+                              Disciplina: Desenvolvimento Mobile
+ Instituto de Ciências
+                                                                         Relatório 1
+ Exatas e Tecnologia        Título da Aula: Conhecendo a Ferramenta
+                                         Android Studio
+
+
+ORIENTAÇÕES:
+Cada aluno deve produzir um relatório curto (1 a 2 páginas), contendo:
+   Resumo Teórico:
+    •   Explicar o que é o Android Studio.
+    •   Descrever a função da IDE no desenvolvimento Android.
+    •   Identificar os principais componentes da ferramenta.
+    •   Explicar a estrutura básica de um projeto Android.
+
+
+    Atividade Prática :
+    •   Inserir prints do Android Studio.
+
+    •   Demonstrar a criação do projeto.
+
+    •   Identificar as principais pastas do projeto.
+
+    •   Explicar a função de cada uma delas.
+
+
+
+    REFERÊNCIAS: O aluno deverá colocar o nome dos livros, sites e materiais
+    utilizados para a realização da atividade. As regras devem seguir a ABNT.
+     ▪   CRITÉRIOS PARA AVALIAÇÃO
+
+
+
+      Critério                 Peso                              Descrição
+
+                                         Clareza, objetividade e demonstração
+ Qualidade do                            de entendimento sobre o Android
+                               2,0
+Resumo Teórico                           Studio, sua finalidade e os principais
+                                         componentes da IDE.
+
+                                         Instalação        correta    da    ferramenta,
+Configuração do                          criação     adequada          do    projeto   e
+                               3,0
+   Ambiente                              reconhecimento dos principais recursos
+                                         do ambiente de desenvolvimento.
+
+   Criação e                             Projeto criado corretamente, executado
+  Execução do                  3,0       sem       erros     e       demonstrando      o
+    Projeto                              funcionamento básico da aplicação.
+
+ Organização e                           Relatório bem estruturado, com prints,
+   Clareza do                  2,0       explicações coerentes e linguagem
+   Relatório                             técnica adequada.
+
+
+
+
+ Nota Final: Será a soma dos valores obtidos em cada critério. Alunos que não
+ entregarem dentro do prazo ou não cumprirem os requisitos mínimos terão nota
+ reduzida proporcionalmente.
+                                       Disciplina: Desenvolvimento Mobile
+     Instituto de Ciências
+                                                                                 Relatório 2
+     Exatas e Tecnologia                 Título da Aula: Criando uma Tela de
+                                        Login no Android Studio utilizando XML
+
+
+    ORIENTAÇÕES:
+    Cada aluno deve produzir um relatório sucinto (2 a 3 páginas), contendo:
+    Resumo Teórico:
+        •      Explicar o que é XML.
+        •      Descrever a separação entre interface e lógica.
+        •      Apresentar os componentes utilizados.
+
+
+    Atividade Prática:
+    Inserir:
+        •      Código XML desenvolvido.
+        •      Print da tela criada.
+•   Explicação dos componentes:
+•   TextView
+•   EditText
+•   Button
+•   LinearLayout
+
+    REFERÊNCIAS: O aluno deve colocar o nome dos livros, sites e materiais utilizados.
+    Seguir ABNT.
+ CRITÉRIOS PARA AVALIAÇÃO
+
+
+      Critério                 Peso                       Descrição
+
+                                         Demonstra compreensão sobre XML,
+   Clareza do                            componentes visuais e separação
+                               2,0
+ Resumo Teórico                          entre interface gráfica e lógica da
+                                         aplicação.
+
+                                         Utilização correta dos componentes
+   Estrutura e
+                                         TextView, EditText, Button e Layouts,
+ Organização da                3,0
+                                         mantendo alinhamento e organização
+    Interface
+                                         visual.
+
+                                        Interface funcionando corretamente,
+Funcionamento da
+                               3,0      exibindo todos os elementos previstos
+  Tela de Login
+                                        sem erros de execução.
+
+                                        Documentação clara, com prints,
+ Organização do
+                               2,0      explicações técnicas e descrição dos
+    Relatório
+                                        componentes utilizados.
+
+
+
+
+ Nota Final: Será a soma dos valores obtidos em cada critério. Alunos que não
+ entregarem dentro do prazo ou não cumprirem os requisitos mínimos terão nota
+ reduzida proporcionalmente.
+                                   Disciplina: Desenvolvimento Mobile
+        Instituto de Ciências
+                                                                              Relatório 3
+        Exatas e Tecnologia       Título da Aula: Criando uma Tela de Login
+                                         Simples com Flutter e DartPad
+
+
+    ORIENTAÇÕES:
+    Cada aluno deve produzir um relatório curto (2 a 3 páginas), contendo:
+    Resumo Teórico:
+    •     Explicar o conceito de Flutter.
+    •     Apresentar a linguagem Dart.
+    •     Explicar o conceito de Widgets.
+    Atividade Prática:
+    Inserir:
+    •     Código desenvolvido.
+    •     Captura de tela da aplicação.
+    •     Explicação dos Widgets utilizados.
+
+
+    Conclusão
+•   Comparar o desenvolvimento Android Nativo e Flutter.
+•   Apontar vantagens do Flutter.
+
+
+
+    REFERÊNCIAS: Seguir ABNT para livros e sites utilizados.
+   CRITÉRIOS PARA AVALIAÇÃO
+
+
+
+
+    Critério          Peso                            Descrição
+
+
+
+   Clareza e                  Explicações bem estruturadas e demonstração de
+                       2,0
+  Organização                 entendimento sobre Flutter, Dart e Widgets.
+
+
+
+ Domínio dos                  Demonstra conhecimento dos principais Widgets utilizados,
+                       3,0
+Conceitos Flutter             bem como da estrutura básica de uma aplicação Flutter.
+
+
+
+Implementação da              Aplicação desenvolvida corretamente, utilizando Widgets
+                       3,0
+     Interface                adequados e funcionando sem erros.
+
+
+ Criatividade e               Personalizações visuais, melhorias na interface e aplicação
+                       2,0
+Aprimoramentos                de boas práticas de desenvolvimento mobile.
+
+
+
+
+   Nota Final: Será a soma dos valores obtidos em cada critério. Alunos ou equipes que
+   não cumprirem os requisitos mínimos de funcionamento do código ou não entregarem
+   o relatório dentro do prazo terão sua nota diminuída proporcionalmente.
+                                        Disciplina: Desenvolvimento Mobile
+         Instituto de Ciências
+                                                                                     Relatório 4
+         Exatas e Tecnologia        Título da Aula: Criando um Menu Simples em
+                                               XML no Android Studio
+
+
+     ORIENTAÇÕES:
+     Cada aluno deve produzir um relatório (2 a 3 páginas), contendo:
+     Resumo Teórico:
+     •     Conceito de navegação em aplicativos.
+     •     Estrutura de menus Android.
+     •     Organização de componentes visuais.
+     Atividade Prática:
+     Inserir:
+     •     Código XML.
+     •     Print da interface.
+     •     Explicação dos botões e funcionalidades.
+     Conclusão
+          • Importância da navegação para a experiência do usuário.
+
+            REFERÊNCIAS: O aluno deverá colocar o nome dos livros, sites e materiais
+            utilizados para a realização da atividade. As regras devem seguir a ABNT.
+
+
+
+
+     CRITÉRIOS PARA AVALIAÇÃO
+
+
+
+
+          Critério               Peso                             Descrição
+
+   Entendimento dos                       Demonstra compreensão sobre navegação, organização de
+                                  2,0
+       Conceitos                          menus e experiência do usuário em aplicativos móveis.
+
+Estrutura e Organização                   Menu construído corretamente, com elementos alinhados,
+                                  3,0
+        do Menu                           organizados e visualmente coerentes.
+
+   Funcionamento da                       Interface funcionando adequadamente, permitindo acesso
+                                  3,0
+        Solução                           às opções previstas no menu.
+
+                                          Relatório contendo explicações claras, capturas de tela e
+Organização do Relatório          2,0
+                                          descrição das funcionalidades implementadas.
+Nota Final: Será a soma dos valores obtidos em cada critério. Alunos ou equipes que
+não cumprirem os requisitos mínimos de funcionamento do código ou não entregarem
+o relatório dentro do prazo terão sua nota diminuída proporcionalmente.
+                                Disciplina: Desenvolvimento Mobile
+     Instituto de Ciências
+                                                                             Relatório 5
+     Exatas e Tecnologia          Título da Aula: Criando um Aplicativo
+                                          Utilizando CheckBox
+
+
+
+    ORIENTAÇÕES:
+    Cada aluno deve produzir um relatório (2 a 3 páginas), contendo:
+    Resumo Teórico:
+           •   Explicar o componente CheckBox.
+           •   Apresentar aplicações práticas.
+    Atividade Prática:
+    Inserir:
+           •   Código XML.
+           •   Código Java.
+           •   Prints da execução.
+    Conclusão
+         • Explicar como o componente pode ser utilizado em formulários.
+
+        REFERÊNCIAS: O aluno deverá colocar o nome dos livros, sites e materiais
+        utilizados para a realização da atividade. As regras devem seguir a ABNT.
+
+
+
+    CRITÉRIOS PARA AVALIAÇÃO
+
+
+      Critério           Peso                           Descrição
+
+    Domínio do                  Demonstra entendimento sobre o funcionamento e utilização
+                         3,0
+Componente CheckBox             prática do componente CheckBox em aplicativos Android.
+
+  Implementação da              Captura correta das opções selecionadas e exibição
+                         3,0
+       Lógica                   adequada das informações ao usuário.
+
+Organização Visual da           Layout organizado, com componentes alinhados e boa
+                         2,0
+      Interface                 apresentação visual.
+
+   Organização do               Relatório contendo códigos, prints e explicações detalhadas
+      Relatório          2,0
+                                sobre a implementação realizada.
+                               Disciplina: Desenvolvimento Mobile
+     Instituto de Ciências
+                                                                               Relatório 6
+     Exatas e Tecnologia            Título da Aula: Criando um Aplicativo
+                                        Utilizando SharedPreferences
+
+
+
+    ORIENTAÇÕES:
+    Cada aluno deve produzir um relatório (2 a 3 páginas), contendo:
+    Resumo Teórico:
+           •   Explicar o conceito de armazenamento local.
+           •   Descrever o funcionamento do SharedPreferences.
+    Atividade Prática:
+    Inserir:
+           •   Código desenvolvido.
+           •   Prints demonstrando salvamento e recuperação de dados.
+    Conclusão
+
+           •   Importância do armazenamento local em aplicativos móveis.
+
+        REFERÊNCIAS: O aluno deverá colocar o nome dos livros, sites e materiais
+        utilizados para a realização da atividade. As regras devem seguir a ABNT.
+
+
+
+
+    CRITÉRIOS PARA AVALIAÇÃO
+
+
+        Critério             Peso                           Descrição
+
+                                    Demonstra compreensão sobre armazenamento local de
+    Resumo Teórico           2,0
+                                    dados e funcionamento do SharedPreferences.
+
+   Implementação do                 Aplicação salva e recupera informações corretamente,
+                             4,0
+   SharedPreferences                demonstrando persistência dos dados.
+
+   Funcionamento da                 Sistema executa sem erros e mantém os dados
+                             2,0
+      Aplicação                     armazenados conforme esperado.
+
+Organização e Clareza do            Explicações objetivas, prints ilustrativos e documentação
+        Relatório            2,0
+                                    adequada da atividade desenvolvida.
+                                  Disciplina: Desenvolvimento Mobile
+      Instituto de Ciências
+                                                                               Relatório 7
+      Exatas e Tecnologia            Título da Aula: Criando um Aplicativo
+                                       Utilizando Conceitos de Segurança
+
+
+
+
+     ORIENTAÇÕES:
+     Cada aluno deve produzir um relatório (2 a 3 páginas), contendo:
+     Resumo Teórico:
+            •     Conceitos básicos de segurança.
+            •     Validação de entrada de dados.
+            •     Importância da autenticação.
+     Atividade Prática:
+     Inserir:
+            •     Código desenvolvido.
+            •     Prints das validações.
+            •     Explicação da lógica implementada.
+     Conclusão
+
+            •     Importância da segurança em aplicativos móveis.
+
+         REFERÊNCIAS: O aluno deverá colocar o nome dos livros, sites e materiais
+         utilizados para a realização da atividade. As regras devem seguir a ABNT.
+
+     CRITÉRIOS PARA AVALIAÇÃO
+
+
+       Critério            Peso                             Descrição
+                                   Demonstra entendimento sobre validação de dados,
+Domínio dos Conceitos
+                            3,0    autenticação e proteção de informações em aplicativos
+   de Segurança
+                                   móveis.
+                                   Campos validados corretamente, identificando erros de
+ Implementação das
+                            3,0    preenchimento e exibindo mensagens apropriadas ao
+     Validações
+                                   usuário.
+  Funcionamento da                 Aplicação executa corretamente, aplicando todas as
+     Aplicação              2,0    validações previstas sem falhas.
+   Organização do                  Relatório claro, organizado e contendo evidências da
+      Relatório             2,0    implementação realizada.
+                                  Disciplina: Desenvolvimento Mobile
+      Instituto de Ciências
+                                                                               Relatório 8
+      Exatas e Tecnologia             Título da Aula: Criando um Aplicativo
+                                         Verificador de Senha com Flutter
+
+
+
+     ORIENTAÇÕES:
+     Cada aluno deve produzir um relatório (2 a 3 páginas), contendo:
+     Resumo Teórico:
+            •   Conceito de validação de dados.
+            •   Segurança de senhas.
+            •   Utilização de Widgets em Flutter.
+     Atividade Prática:
+     Inserir:
+            •   Código Dart.
+            •   Print da aplicação.
+            •   Explicação da lógica utilizada.
+     Conclusão
+
+            •   Importância da criação de senhas seguras.
+            •   Aplicação prática em sistemas reais.
+
+         REFERÊNCIAS: O aluno deverá colocar o nome dos livros, sites e materiais
+         utilizados para a realização da atividade. As regras devem seguir a ABNT.
+
+
+
+     CRITÉRIOS PARA AVALIAÇÃO
+
+
+        Critério           Peso                              Descrição
+
+  Clareza do Resumo               Demonstra compreensão sobre segurança de senhas,
+                            3,0
+        Teórico                   validação de entrada de dados e desenvolvimento com Flutter.
+
+Implementação da Lógica     Aplicação analisa corretamente a senha digitada e classifica
+                        3,0
+     de Validação           seu nível de segurança conforme os critérios definidos.
+
+   Funcionamento da               Aplicação executa sem erros e apresenta os resultados
+                            2,0
+       Aplicação                  esperados ao usuário.
+
+ Organização e Clareza            Relatório completo, com códigos, prints e explicações técnicas
+     do Relatório           2,0
+                                  adequadas.
+

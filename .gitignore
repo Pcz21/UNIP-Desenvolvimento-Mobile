@@ -1,0 +1,7 @@
+.ferramentas/
+**/build/
+**/.dart_tool/
+**/.flutter-plugins*
+**/.gradle/
+**/local.properties
+__pycache__/
