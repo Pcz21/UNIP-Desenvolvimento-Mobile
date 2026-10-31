@@ -10,6 +10,8 @@ Leitura integral: Roteiro.dev.mobile.pdf (17 páginas) e Relatório.dev.mobile.p
 - [ ] Oito DOCX/PDF, consolidado com capa, códigos completos separados, testes e guia de laboratório.
 - [ ] Conferir páginas/imagens/abertura e salvar no GitHub.
 
+Os documentos também preveem redução proporcional de nota por atraso ou descumprimento dos requisitos mínimos. Prazo institucional: [NÃO INFORMADO — confirmar com o docente]. O roteiro 3 menciona criatividade/aprimoramentos no modelo de avaliação; a implementação acrescenta tema, rolagem, rótulos e tratamento local de entrada. Os recursos de aula (projetor/compartilhamento de tela no roteiro 1) não constituem evidência de presença e não foram presumidos.
+
 ## Requisitos e critérios antes do desenvolvimento
 
 ### Relatório 01 — Conhecendo o Android Studio
@@ -66,7 +68,7 @@ Rubrica do relatório: Componente 3; lógica 3; visual 2; relatório 2.
 
 Fonte: Roteiro p. 14; relatório p. 11.
 
-- [ ] Receber nome; salvar localmente; recuperar na reabertura; código e prints de salvamento/recuperação; teoria armazenamento local/SharedPreferences; distinguir temporário/persistente; testar reinício.
+- [x] Receber nome; salvar localmente; recuperar na reabertura; código e prints de salvamento/recuperação; teoria armazenamento local/SharedPreferences; distinguir temporário/persistente; testar reinício.
 
 Rubrica do roteiro: Salvar 4; recuperar 3; interface 2; relatório 1.
 
@@ -76,7 +78,7 @@ Rubrica do relatório: Teoria 2; implementação 4; funcionamento 2; relatório 
 
 Fonte: Roteiro p. 15; relatório p. 12.
 
-- [ ] Vazio obrigatório; e-mail inválido; senha menor que seis caracteres; mensagens específicas; código/prints/lógica; teoria segurança, validação, autenticação; casos inválidos/válidos; validação local não autentica.
+- [x] Vazio obrigatório; e-mail inválido; senha menor que seis caracteres; mensagens específicas; código/prints/lógica; teoria segurança, validação, autenticação; casos inválidos/válidos; validação local não autentica.
 
 Rubrica do roteiro: Validações 4; funcionamento 3; interface 2; relatório 1.
 
@@ -86,7 +88,7 @@ Rubrica do relatório: Conceitos 3; validações 3; funcionamento 2; relatório 
 
 Fonte: Roteiro pp. 16–17; relatório p. 13.
 
-- [ ] Receber senha; analisar tamanho e complexidade; Fraca/Média/Forte; atualização visual; Dart/captura/lógica; critérios numéricos explícitos; teoria widgets/validação/segurança; conclusão aplicações reais; três níveis testados; sem logs de senhas.
+- [x] Receber senha; analisar tamanho e complexidade; Fraca/Média/Forte; atualização visual; Dart/captura/lógica; critérios numéricos explícitos; teoria widgets/validação/segurança; conclusão aplicações reais; três níveis testados; sem logs de senhas.
 
 Rubrica do roteiro: Lógica 4; interface 3; funcionamento 2; relatório 1.
 
@@ -100,7 +102,7 @@ Rubrica do relatório: Teoria 3; lógica 3; funcionamento 2; relatório 2.
 |02|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |03|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|
 |04|sim|sim|sim|5 verificações de interface aprovadas|4|sim|sim|sim|Preencher identificação acadêmica|concluído|
-|05|sim|sim|não|15 testes compartilhados de regras Java (R5/R7); interface não testada|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|05|sim|sim|sim|3 verificações de interface aprovadas|3|sim|sim|sim|Preencher identificação acadêmica|concluído|
 |06|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
 |07|sim|sim|não|15 testes compartilhados de regras Java (R5/R7); interface não testada|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
 |08|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|

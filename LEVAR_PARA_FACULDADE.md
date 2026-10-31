@@ -75,6 +75,6 @@ Os arquivos editáveis de conteúdo estão em `relatorios/fontes/relatorioNN.jso
 
 - Preserve os PNG originais; inclua caminho, legenda, contexto e resultado observado no JSON. O tipo `grid` dispõe imagens originais sem fabricar pixels.
 - Para capturas Android produzidas por `testes/android_funcional.py NN`, execute `python testes/incorporar_evidencias.py NN` e depois `python testes/gerar_relatorios.py`.
-- Os scripts `redigir_android.py` e `redigir_flutter.py` são rascunhos históricos de redação: não os execute sobre relatórios revisados. Edite as fontes JSON atuais.
+- Edite as fontes JSON atuais; não reconstrua rascunhos antigos sobre relatórios revisados.
 - Instale as dependências Python locais conforme `testes/requirements.txt` se não estiverem disponíveis. Nunca forneça senhas ou tokens no terminal ou chat.
 - Revise páginas, imagens e identificação. Execute `python testes/verificar_entrega.py`. Atualize checklist e pendências com os resultados reais antes de enviar ao professor.

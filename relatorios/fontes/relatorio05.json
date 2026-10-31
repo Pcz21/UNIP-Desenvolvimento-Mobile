@@ -68,15 +68,32 @@
     [
       [
         "h",
-        "Evidências e teste de interface"
+        "Testes funcionais e evidências reais"
       ],
       [
         "p",
-        "EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA"
+        "3 verificações aprovadas via ADB e UI Automator. Plataforma: Emulador Android API 30 x86_64, TCG sem KVM. Resultado conferido pela árvore da interface antes de cada captura; PNG original preservado. Registro: testes/android-funcional-05.json."
+      ],
+      [
+        "grid",
+        [
+          {
+            "path": "evidencias/relatorio05/01-nenhuma.png",
+            "caption": "Figura 1 — Resultado sem selecionar tecnologias. Fonte: execução própria."
+          },
+          {
+            "path": "evidencias/relatorio05/02-uma.png",
+            "caption": "Figura 2 — Resultado com uma tecnologia selecionada. Fonte: execução própria."
+          },
+          {
+            "path": "evidencias/relatorio05/03-multiplas.png",
+            "caption": "Figura 3 — Resultado com múltiplas tecnologias. Fonte: execução própria."
+          }
+        ]
       ],
       [
         "p",
-        "O emulador está em avaliação. Não foram utilizados prints artificiais. A compilação comprovada não equivale à execução da tela. Status parcial até os testes e as capturas reais."
+        "Execução e capturas concluídas nesta plataforma. Identificação acadêmica e local da aula prática permanecem a preencher; não foi declarada presença em laboratório."
       ],
       [
         "h",
