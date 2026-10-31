@@ -94,13 +94,13 @@ Rubrica do relatório: Teoria 3; lógica 3; funcionamento 2; relatório 2.
 
 ## Situação verificada
 
-|Relatório|Código|Compilação|Executado|Testes reais|Prints|Inseridos|Word|PDF|Pendências|Status|
+|Relatório|Código desenvolvido|Compilação realizada|Aplicativo executado|Testes realizados|Prints reais|Capturas inseridas|Word gerado|PDF gerado|Pendências|Status|
 |---|---|---|---|---|---|---|---|---|---|---|
-|01|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
-|02|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
-|03|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
-|04|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
-|05|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
-|06|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
-|07|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
-|08|não|não|não|não executados|0|não|não|não|Implementar e validar|não iniciado|
+|01|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; print real da IDE Android Studio e exploração da estrutura; executar e capturar emulador|parcialmente concluído|
+|02|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|03|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|
+|04|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|05|sim|sim|não|15 testes compartilhados de regras Java (R5/R7); interface não testada|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|06|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|07|sim|sim|não|15 testes compartilhados de regras Java (R5/R7); interface não testada|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|08|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|

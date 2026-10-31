@@ -1,0 +1,9 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:background="#F1F5F9">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="20dp" android:text="@string/texto_5" android:textSize="24sp" android:textColor="#12304A"/>
+<Button android:id="@+id/cadastro" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginBottom="8dp" android:text="@string/texto_6" android:drawableStart="@android:drawable/ic_menu_add" android:drawablePadding="12dp"/>
+<Button android:id="@+id/consultar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginBottom="8dp" android:text="@string/texto_7" android:drawableStart="@android:drawable/ic_menu_search" android:drawablePadding="12dp"/>
+<Button android:id="@+id/configuracoes" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginBottom="8dp" android:text="@string/texto_8" android:drawableStart="@android:drawable/ic_menu_preferences" android:drawablePadding="12dp"/>
+<Button android:id="@+id/sair" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginBottom="8dp" android:text="@string/texto_9" android:drawableStart="@android:drawable/ic_menu_close_clear_cancel" android:drawablePadding="12dp"/>
+</LinearLayout>
+</ScrollView>

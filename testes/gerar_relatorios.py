@@ -4,7 +4,7 @@ import json, re
 from xml.sax.saxutils import escape
 from docx import Document
 from docx.shared import Inches, Pt, Cm
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Image, Preformatted, KeepTogether
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Image, Preformatted, KeepTogether, Table, TableStyle
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER
@@ -16,7 +16,7 @@ for style,name in [('','DejaVuSans.ttf'),('-Bold','DejaVuSans-Bold.ttf')]:
  pdfmetrics.registerFont(TTFont('DejaVu'+style,'/usr/share/fonts/truetype/dejavu/'+name))
 pdfmetrics.registerFont(TTFont('Mono','/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf'))
 styles=getSampleStyleSheet()
-styles['Normal'].fontName='DejaVu';styles['Normal'].fontSize=9;styles['Normal'].leading=13;styles['Normal'].spaceAfter=7
+styles['Normal'].fontName='DejaVu';styles['Normal'].fontSize=10;styles['Normal'].leading=14;styles['Normal'].spaceAfter=7
 styles['Heading1'].fontName='DejaVu-Bold';styles['Heading1'].fontSize=15;styles['Heading1'].leading=20
 styles['Heading2'].fontName='DejaVu-Bold';styles['Heading2'].fontSize=11;styles['Heading2'].leading=15
 styles.add(ParagraphStyle('Codigo',fontName='Mono',fontSize=6.5,leading=8,spaceAfter=8))
@@ -33,6 +33,22 @@ def add(d,story,kind,text):
  elif kind=='code':
   para=d.add_paragraph();run=para.add_run(text);run.font.name='Consolas';run.font.size=Pt(7)
   story.append(Preformatted(text,styles['Codigo']))
+ elif kind=='grid':
+  # Mesmos PNG originais, sem fabricar ou alterar pixels. Tabela apenas os dispõe.
+  grid=[];dt=d.add_table(rows=0, cols=2)
+  for first in range(0,len(text),2):
+   row=[];cells=dt.add_row().cells
+   for j,item in enumerate(text[first:first+2]):
+    path=ROOT/item['path'];w,h=PILImage.open(path).size
+    height=180;width=height*w/h
+    if width>200:width=200;height=width*h/w
+    row.append([Image(str(path),width=width,height=height),Paragraph(escape(item['caption']),styles['Legenda'])])
+    cells[j].paragraphs[0].add_run().add_picture(str(path),height=Inches(height/72))
+    cells[j].add_paragraph(item['caption'],style='Caption')
+   if len(row)==1:row.append('')
+   grid.append(row)
+  table=Table(grid,colWidths=[235,235]);table.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BOTTOMPADDING',(0,0),(-1,-1),10)]))
+  story.append(table)
  elif kind=='image':
   path=ROOT/text['path'];caption=text['caption']
   w,h=PILImage.open(path).size

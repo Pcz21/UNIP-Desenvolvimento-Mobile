@@ -1,0 +1,99 @@
+{
+  "id": "02",
+  "pages": [
+    [
+      [
+        "title",
+        "Relatório 2 — Tela de login em XML"
+      ],
+      [
+        "p",
+        "Nome: [PREENCHER] | RA: [PREENCHER]\nPolo: [PREENCHER] | Local da aula prática: [PREENCHER]\nData acadêmica: [PREENCHER]. Trabalho remoto no Codex Cloud; participação presencial não declarada."
+      ],
+      [
+        "h",
+        "Objetivo e resumo teórico"
+      ],
+      [
+        "p",
+        "Construir uma tela com título, e-mail, senha e botão Entrar. XML é uma linguagem de marcação usada para declarar componentes e atributos. Separar interface e lógica permite ajustar tamanhos, espaçamentos e textos sem misturar essas decisões com o tratamento do clique."
+      ],
+      [
+        "p",
+        "TextView apresenta o título e o resultado; EditText coleta e-mail e senha, usando tipos de entrada adequados; Button dispara uma ação; LinearLayout dispõe os filhos verticalmente. Um ScrollView externo mantém acesso em telas menores. Os textos de interface do layout estão em res/values/strings.xml, com margens e áreas de toque mínimas."
+      ],
+      [
+        "h",
+        "Atividade prática"
+      ],
+      [
+        "p",
+        "A Activity carrega activity_login.xml, obtém as referências com findViewById e registra um OnClickListener. Campos vazios geram orientação. Quando preenchidos, o resultado mostra uma saudação e identifica a demonstração como local. A senha é limpa após o clique bem-sucedido. Não existe servidor, sessão ou autenticação."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Implementação e códigos"
+      ],
+      [
+        "code",
+        "<LinearLayout android:orientation=\"vertical\" ...>\n <TextView android:text=\"@string/texto_1\" ... />\n <EditText android:id=\"@+id/email\"\n   android:inputType=\"textEmailAddress\" ... />\n <EditText android:id=\"@+id/senha\"\n   android:inputType=\"textPassword\" ... />\n <Button android:id=\"@+id/entrar\" ... />\n</LinearLayout>"
+      ],
+      [
+        "p",
+        "As reticências identificam um recorte explicativo, não um XML executável. O arquivo integral anexo contém os atributos de tamanho, espaçamento e recursos e é a fonte usada na compilação."
+      ],
+      [
+        "p",
+        "Fontes integrais: android-nativo/app/src/main/java/br/edu/unip/mobile/LoginActivity.java e android-nativo/app/src/main/res/layout/activity_login.xml. Regras adicionais: Regras.java. Todos os arquivos são anexos de código no repositório."
+      ],
+      [
+        "h",
+        "Testes e resultados reais"
+      ],
+      [
+        "p",
+        "Compilação da base aprovada (testes/android-base-build.log); compilação das seis telas e Android Lint aprovados (testes/android-final-build.log). Quinze verificações de lógica Java passaram (testes/java-regras.log). Esses resultados não substituem a execução e os testes de interface. A situação específica da execução está registrada na seção de evidências."
+      ],
+      [
+        "h",
+        "Conclusão"
+      ],
+      [
+        "p",
+        "A separação entre XML e Java facilita a manutenção. Uma interface de login é apenas a apresentação: a validação visual e a saudação não comprovam identidade. Autenticação de produção exigiria serviço confiável, proteção de comunicação e gerenciamento de sessão."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Evidências e teste de interface"
+      ],
+      [
+        "p",
+        "EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA"
+      ],
+      [
+        "p",
+        "O emulador está em avaliação. Não foram utilizados prints artificiais. A compilação comprovada não equivale à execução da tela. Status parcial até os testes e as capturas reais."
+      ],
+      [
+        "h",
+        "Referências"
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Roteiros: Desenvolvimento Mobile. [S. l.]: UNIP, [s. d.]. Roteiro 2. Material didático fornecido."
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Desenvolvimento Mobile: relatório de aulas práticas. [S. l.]: UNIP, [s. d.]. Relatório 2. Material didático fornecido."
+      ],
+      [
+        "p",
+        "ANDROID DEVELOPERS. Documentação para desenvolvedores Android. [S. l.], [s. d.]. Disponível em: https://developer.android.com/. Consulta on-line pendente de liberação de rede."
+      ]
+    ]
+  ]
+}

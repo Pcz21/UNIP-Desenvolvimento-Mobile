@@ -1,0 +1,99 @@
+{
+  "id": "05",
+  "pages": [
+    [
+      [
+        "title",
+        "Relatório 5 — Aplicativo utilizando CheckBox"
+      ],
+      [
+        "p",
+        "Nome: [PREENCHER] | RA: [PREENCHER]\nPolo: [PREENCHER] | Local da aula prática: [PREENCHER]\nData acadêmica: [PREENCHER]. Trabalho remoto no Codex Cloud; participação presencial não declarada."
+      ],
+      [
+        "h",
+        "Objetivo e resumo teórico"
+      ],
+      [
+        "p",
+        "Capturar opções independentes para a pergunta “Quais tecnologias você conhece?”. CheckBox representa uma escolha booleana e permite múltiplas seleções, ao contrário de um conjunto de RadioButtons para escolha única. É aplicável a preferências, interesses e itens de formulários."
+      ],
+      [
+        "p",
+        "A tela apresenta Java, Kotlin, Flutter e Python, seguidos do botão Verificar Resposta. Os componentes ficam alinhados em uma coluna e cada opção tem área de toque de pelo menos 48 dp. A seleção só é avaliada no clique, tornando o fluxo explícito para o usuário."
+      ],
+      [
+        "h",
+        "Atividade prática"
+      ],
+      [
+        "p",
+        "O listener percorre os quatro IDs e consulta isChecked. Para cada opção marcada, adiciona getText à lista. Regras.selecoes produz uma mensagem específica para lista vazia ou concatena os nomes selecionados em ordem. Um TextView apresenta o resultado de forma persistente na tela."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Implementação e códigos"
+      ],
+      [
+        "code",
+        "ArrayList<String> escolhas = new ArrayList<>();\n// Para cada CheckBox do layout:\nif (check.isChecked())\n escolhas.add(check.getText().toString());\nresultado.setText(Regras.selecoes(escolhas));"
+      ],
+      [
+        "p",
+        "O código Java integral inclui a associação dos IDs e o listener. O XML integral contém quatro CheckBoxes e o botão, preservados como arquivos separados para leitura e reprodução."
+      ],
+      [
+        "p",
+        "Fontes integrais: android-nativo/app/src/main/java/br/edu/unip/mobile/CheckboxActivity.java e android-nativo/app/src/main/res/layout/activity_checkbox.xml. Regras adicionais: Regras.java. Todos os arquivos são anexos de código no repositório."
+      ],
+      [
+        "h",
+        "Testes e resultados reais"
+      ],
+      [
+        "p",
+        "Compilação da base aprovada (testes/android-base-build.log); compilação das seis telas e Android Lint aprovados (testes/android-final-build.log). Quinze verificações de lógica Java passaram (testes/java-regras.log). Esses resultados não substituem a execução e os testes de interface. A situação específica da execução está registrada na seção de evidências."
+      ],
+      [
+        "h",
+        "Conclusão"
+      ],
+      [
+        "p",
+        "CheckBox permite formulários com escolhas simultâneas sem obrigar o usuário a selecionar um item. Tratar explicitamente a lista vazia evita mensagem ambígua. A lista produzida pode ser utilizada em outras etapas de um formulário, com validações próprias do domínio."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Evidências e teste de interface"
+      ],
+      [
+        "p",
+        "EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA"
+      ],
+      [
+        "p",
+        "O emulador está em avaliação. Não foram utilizados prints artificiais. A compilação comprovada não equivale à execução da tela. Status parcial até os testes e as capturas reais."
+      ],
+      [
+        "h",
+        "Referências"
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Roteiros: Desenvolvimento Mobile. [S. l.]: UNIP, [s. d.]. Roteiro 5. Material didático fornecido."
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Desenvolvimento Mobile: relatório de aulas práticas. [S. l.]: UNIP, [s. d.]. Relatório 5. Material didático fornecido."
+      ],
+      [
+        "p",
+        "ANDROID DEVELOPERS. Documentação para desenvolvedores Android. [S. l.], [s. d.]. Disponível em: https://developer.android.com/. Consulta on-line pendente de liberação de rede."
+      ]
+    ]
+  ]
+}

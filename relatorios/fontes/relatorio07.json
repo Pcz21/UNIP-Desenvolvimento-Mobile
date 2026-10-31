@@ -1,0 +1,99 @@
+{
+  "id": "07",
+  "pages": [
+    [
+      [
+        "title",
+        "Relatório 7 — Validações e conceitos de segurança"
+      ],
+      [
+        "p",
+        "Nome: [PREENCHER] | RA: [PREENCHER]\nPolo: [PREENCHER] | Local da aula prática: [PREENCHER]\nData acadêmica: [PREENCHER]. Trabalho remoto no Codex Cloud; participação presencial não declarada."
+      ],
+      [
+        "h",
+        "Objetivo e resumo teórico"
+      ],
+      [
+        "p",
+        "Validar campos obrigatórios, formato de e-mail e senha com menos de seis caracteres. Validação de entrada verifica conformidade com regras; autenticação estabelece a identidade de quem solicita acesso. Segurança também envolve confidencialidade, integridade, disponibilidade e controle de acesso."
+      ],
+      [
+        "p",
+        "A tela usa EditText com rótulos, senha oculta, botão Validar e resultado textual. A regra de e-mail verifica formato básico, sem garantir que a caixa postal exista. A regra de senha adota o limite mínimo de seis caracteres do roteiro, contado por pontos de código; esse mínimo acadêmico não é uma política recomendada para produção."
+      ],
+      [
+        "h",
+        "Atividade prática"
+      ],
+      [
+        "p",
+        "Regras.erroEmail distingue obrigatório e formato inválido. Regras.erroSenha distingue vazio e menos de seis caracteres. A Activity limpa erros anteriores, aplica setError em cada campo e exibe mensagens específicas no resultado. Com entradas válidas, informa apenas que os dados passaram pelas regras locais, sem autenticação em servidor."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Implementação e códigos"
+      ],
+      [
+        "code",
+        "if (email.trim().isEmpty()) return \"E-mail obrigatório.\";\nif (senha.isEmpty()) return \"Senha obrigatória.\";\nif (senha.codePointCount(0, senha.length()) < 6)\n return \"Senha deve ter pelo menos 6 caracteres.\";"
+      ],
+      [
+        "p",
+        "A lógica compartilhada completa está em Regras.java. Não há gravação nem logs de senha. Testes devem usar apenas exemplos fictícios. Sistemas reais precisam repetir validações no servidor e proteger credenciais, comunicação e sessão; a validação local pode ser contornada."
+      ],
+      [
+        "p",
+        "Fontes integrais: android-nativo/app/src/main/java/br/edu/unip/mobile/ValidacaoActivity.java e android-nativo/app/src/main/res/layout/activity_validacao.xml. Regras adicionais: Regras.java. Todos os arquivos são anexos de código no repositório."
+      ],
+      [
+        "h",
+        "Testes e resultados reais"
+      ],
+      [
+        "p",
+        "Compilação da base aprovada (testes/android-base-build.log); compilação das seis telas e Android Lint aprovados (testes/android-final-build.log). Quinze verificações de lógica Java passaram (testes/java-regras.log). Esses resultados não substituem a execução e os testes de interface. A situação específica da execução está registrada na seção de evidências."
+      ],
+      [
+        "h",
+        "Conclusão"
+      ],
+      [
+        "p",
+        "A validação fornece retorno imediato e reduz erros de preenchimento. Ela complementa, mas não substitui, autenticação e autorização. As mensagens específicas tornam o comportamento verificável; o sucesso local não é anunciado como acesso seguro ou identidade comprovada."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Evidências e teste de interface"
+      ],
+      [
+        "p",
+        "EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA"
+      ],
+      [
+        "p",
+        "O emulador está em avaliação. Não foram utilizados prints artificiais. A compilação comprovada não equivale à execução da tela. Status parcial até os testes e as capturas reais."
+      ],
+      [
+        "h",
+        "Referências"
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Roteiros: Desenvolvimento Mobile. [S. l.]: UNIP, [s. d.]. Roteiro 7. Material didático fornecido."
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Desenvolvimento Mobile: relatório de aulas práticas. [S. l.]: UNIP, [s. d.]. Relatório 7. Material didático fornecido."
+      ],
+      [
+        "p",
+        "ANDROID DEVELOPERS. Documentação para desenvolvedores Android. [S. l.], [s. d.]. Disponível em: https://developer.android.com/. Consulta on-line pendente de liberação de rede."
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+<resources>
+<string name="texto_1">Portal UNIP — Login</string>
+<string name="texto_2">E-mail</string>
+<string name="texto_3">Senha</string>
+<string name="texto_4">Entrar</string>
+<string name="texto_5">Menu de atividades</string>
+<string name="texto_6">Cadastro</string>
+<string name="texto_7">Consultar</string>
+<string name="texto_8">Configurações</string>
+<string name="texto_9">Sair</string>
+<string name="texto_10">Navegação</string>
+<string name="texto_11">Voltar</string>
+<string name="texto_12">Java</string>
+<string name="texto_13">Kotlin</string>
+<string name="texto_14">Flutter</string>
+<string name="texto_15">Python</string>
+<string name="texto_16">Quais tecnologias você conhece?</string>
+<string name="texto_17">Verificar Resposta</string>
+<string name="texto_18">Meu nome — armazenamento local</string>
+<string name="texto_19">Nome do usuário</string>
+<string name="texto_20">Salvar nome</string>
+<string name="texto_21">Validação de formulário</string>
+<string name="texto_22">E-mail</string>
+<string name="texto_23">Senha (mínimo 6 caracteres)</string>
+<string name="texto_24">Validar</string>
+</resources>

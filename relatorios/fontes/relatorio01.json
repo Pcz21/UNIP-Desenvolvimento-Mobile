@@ -1,0 +1,77 @@
+{
+  "id": "01",
+  "pages": [
+    [
+      [
+        "title",
+        "Relatório 1 — Conhecendo a ferramenta Android Studio"
+      ],
+      [
+        "p",
+        "Nome: [PREENCHER] | RA: [PREENCHER]\nPolo: [PREENCHER] | Local da aula prática: [PREENCHER]\nData acadêmica: [PREENCHER]. Trabalho remoto no Codex Cloud; participação presencial não declarada."
+      ],
+      [
+        "h",
+        "Objetivo e resumo teórico"
+      ],
+      [
+        "p",
+        "Criar um projeto Android básico, alterar seu texto inicial e reconhecer os arquivos usados no desenvolvimento. Android Studio é a IDE oficial para Android, reunindo editor, gerenciamento de SDK, sincronização Gradle, ferramentas de depuração e integração com dispositivos virtuais. A IDE facilita o fluxo editar, compilar, instalar, executar e inspecionar."
+      ],
+      [
+        "p",
+        "A Activity é o ponto de interação e recebe eventos do ciclo de vida, como onCreate. O layout XML descreve a interface de modo declarativo e é carregado com setContentView. AndroidManifest.xml declara a aplicação, as Activities e o ponto de entrada. Gradle configura plugins, versões do SDK e tarefas de compilação; o Gradle Wrapper padroniza a versão utilizada."
+      ],
+      [
+        "h",
+        "Atividade prática"
+      ],
+      [
+        "p",
+        "android-nativo/app/src/main/java contém classes Java; res/layout contém as telas XML; res/values guarda textos e recursos compartilhados; AndroidManifest.xml fica em app/src/main. app/build.gradle configura o módulo; settings.gradle registra o projeto. O emulador executa uma imagem Android isolada para testar o APK. A pasta build contém saídas geradas e não substitui o código-fonte."
+      ],
+      [
+        "h",
+        "Implementação"
+      ],
+      [
+        "code",
+        "@Override public void onCreate(Bundle state) {\n super.onCreate(state);\n setContentView(R.layout.activity_main);\n}"
+      ],
+      [
+        "p",
+        "Texto inicial alterado e navegação para as atividades independentes. Fontes: MainActivity.java e res/layout/activity_main.xml."
+      ]
+    ],
+    [
+      [
+        "h",
+        "Testes, evidências e conclusão"
+      ],
+      [
+        "p",
+        "A base e o projeto final compilaram; Android Lint não apontou erros. Os logs estão em testes/. EVIDÊNCIA PENDENTE — EXECUÇÃO NECESSÁRIA: aplicativo e interface real do Android Studio. A IDE não foi instalada ou aberta neste ambiente."
+      ],
+      [
+        "p",
+        "O conhecimento da estrutura torna possível localizar a interface, a lógica e a configuração. A compilação por linha de comando não demonstra a interface do Android Studio. O print da IDE continua obrigatório e pendente para conclusão acadêmica."
+      ],
+      [
+        "h",
+        "Referências"
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Roteiros: Desenvolvimento Mobile. [S. l.]: UNIP, [s. d.]. Roteiro 1. Material didático fornecido."
+      ],
+      [
+        "p",
+        "UNIVERSIDADE PAULISTA. Desenvolvimento Mobile: relatório de aulas práticas. [S. l.]: UNIP, [s. d.]. Relatório 1. Material didático fornecido."
+      ],
+      [
+        "p",
+        "ANDROID DEVELOPERS. Documentação para desenvolvedores Android. [S. l.], [s. d.]. Disponível em: https://developer.android.com/. Consulta on-line pendente de liberação de rede."
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,103 @@
+--------- beginning of system
+10-31 12:01:28.867   527   527 I SystemServiceManager: Starting com.android.server.UiModeManagerService
+10-31 12:01:28.898   527   634 I SystemServerTimingAsync: InitThreadPoolExec:UiModeManager.onStart
+10-31 12:01:28.898   527   634 D SystemServerInitThreadPool: Started executing UiModeManager.onStart
+10-31 12:01:28.925   527   527 D SystemServerTiming: StartUiModeManager took to complete: 59ms
+10-31 12:01:28.926   527   527 I SystemServerTiming: UpdatePackagesIfNeeded
+10-31 12:01:28.926   527   527 I Watchdog: Pausing HandlerChecker: main thread for reason: dexopt. Pause count: 1
+10-31 12:01:29.137   527   634 D SystemServerInitThreadPool: Finished executing UiModeManager.onStart
+10-31 12:01:29.137   527   634 D SystemServerTimingAsync: InitThreadPoolExec:UiModeManager.onStart took to complete: 239ms
+--------- beginning of main
+10-31 12:01:29.172   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:29.223   527   662 W HidlServiceManagement: Waited one second for android.hardware.input.classifier@1.0::IInputClassifier/default
+10-31 12:01:29.244   156   156 I hwservicemanager: Since android.hardware.input.classifier@1.0::IInputClassifier/default is not registered, trying to start it as a lazy HAL.
+10-31 12:01:29.268   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:29.276   527   662 I HidlServiceManagement: getService: Trying again for android.hardware.input.classifier@1.0::IInputClassifier/default...
+--------- beginning of kernel
+10-31 12:01:29.315     0     0 I init    : Control message: Processed ctl.interface_start for 'android.hardware.input.classifier@1.0::IInputClassifier/default' from pid: 156 (/system/bin/hwservicemanager)
+10-31 12:01:29.340   665   665 I HidlServiceManagement: Registered android.hardware.input.classifier@1.0::IInputClassifier/default (start delay of 2870ms)
+10-31 12:01:29.365   665   665 I HidlServiceManagement: Removing namespace from process name android.hardware.input.classifier@1.0-service.default to classifier@1.0-service.default.
+10-31 12:01:29.437   156   156 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+10-31 12:01:29.551     0     0 I init    : Sending signal 9 to service 'idmap2d' (pid 408) process group...
+10-31 12:01:30.114     0     0 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 408 in 538ms
+10-31 12:01:30.267     0     0 I init    : Control message: Processed ctl.stop for 'idmap2d' from pid: 527 (system_server)
+10-31 12:01:30.364     0     0 I init    : Service 'idmap2d' (pid 408) received signal 9
+10-31 12:01:30.312   527   639 W OverlayManager: service 'idmap' died
+10-31 12:01:30.343   527   600 W Looper  : Drained
+10-31 12:01:30.345   527   600 W Looper  : Slow dispatch took 731ms android.fg h=android.os.Handler c=com.android.server.om.-$$Lambda$IdmapDaemon$Connection$4U-n0RSv1BPv15mvu8B8zXARcpk@1f69507 m=0
+10-31 12:01:30.514   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:30.884   527   527 I chatty  : uid=1000(system) Binder:527_3 identical 5 lines
+10-31 12:01:30.992   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:31.019   527   527 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /apex/com.android.extservices/priv-app/ExtServices/ExtServices.apk pkg=android.ext.services isa=x86_64 dexoptFlags=public targetFilter=quicken oatDir=null classLoaderContext=PCL[]{}
+10-31 12:01:31.154   411   444 V installd: DexInv: --- BEGIN '/apex/com.android.extservices/priv-app/ExtServices/ExtServices.apk' ---
+10-31 12:01:32.011   278   486 I zygote  : Background young concurrent copying GC freed 40730(2200KB) AllocSpace objects, 12(436KB) LOS objects, 44% free, 3778KB/6750KB, paused 7.272ms total 446.125ms
+10-31 12:01:32.909   674   674 W dex2oat32: Unexpected CPU variant for X86 using defaults: x86_64
+10-31 12:01:32.978   674   674 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=9 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=quicken --classpath-dir=/apex/com.android.extservices/priv-app/ExtServices --class-loader-context=PCL[]{} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=first-boot
+10-31 12:01:33.454   674   674 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
+10-31 12:01:33.765   674   674 W dex2oat32: Method Lcom/google/common/collect/Maps$SortedKeySet;.map is abstract, but the declaring class is neither abstract nor an interface in dex file ExtServices.apk
+10-31 12:01:35.676   278   486 I zygote  : Background young concurrent copying GC freed 64774(2462KB) AllocSpace objects, 5(128KB) LOS objects, 40% free, 4020KB/6750KB, paused 670us total 135.329ms
+10-31 12:01:36.358   278   278 I zygote  : Thread[1,tid=278,Native,Thread*=0xe9102a10,peer=0x12c80310,"main"] recursive attempt to load library "libmedia_jni.so"
+10-31 12:01:36.380   278   278 I zygote  : Thread[1,tid=278,Native,Thread*=0xe9102a10,peer=0x12c80310,"main"] recursive attempt to load library "libmedia_jni.so"
+10-31 12:01:36.388   278   278 D MtpDeviceJNI: register_android_mtp_MtpDevice
+10-31 12:01:36.395   278   278 I zygote  : Thread[1,tid=278,Native,Thread*=0xe9102a10,peer=0x12c80310,"main"] recursive attempt to load library "libmedia_jni.so"
+10-31 12:01:36.396   278   278 I zygote  : Thread[1,tid=278,Native,Thread*=0xe9102a10,peer=0x12c80310,"main"] recursive attempt to load library "libmedia_jni.so"
+10-31 12:01:36.600   278   278 W Zygote  : Class not found for preloading: android.media.MediaRouter$Static$Client$1
+10-31 12:01:36.601   278   278 W Zygote  : Class not found for preloading: android.media.MediaRouter$Static$Client$2
+10-31 12:01:36.618   447   447 W livelock: sample 7.347s
+10-31 12:01:37.013   278   278 W Zygote  : Class not found for preloading: android.net.shared.Inet4AddressUtils
+10-31 12:01:37.014   278   278 W Zygote  : Class not found for preloading: android.net.shared.InetAddressUtils
+10-31 12:01:38.065   278   278 W Zygote  : Class not found for preloading: android.view.-$$Lambda$cZhmLzK8aetUdx4VlP9w5jR7En0
+10-31 12:01:38.215   278   278 W Zygote  : Class not found for preloading: android.view.autofill.-$$Lambda$AutofillManager$AutofillManagerClient$vxNm6RuuD-r5pkiSxNSBBd1w_Qc
+10-31 12:01:38.242   278   278 W Zygote  : Class not found for preloading: android.view.contentcapture.-$$Lambda$MainContentCaptureSession$1$JPRO-nNGZpgXrKr4QC_iQiTbQx0
+10-31 12:01:38.249   278   278 W Zygote  : Class not found for preloading: android.view.contentcapture.-$$Lambda$MainContentCaptureSession$1$Xhq3WJibbalS1G_W3PRC2m7muhM
+10-31 12:01:38.273   278   278 W Zygote  : Class not found for preloading: android.view.contentcapture.MainContentCaptureSession$1
+10-31 12:01:38.258   674   680 W dex2oat32: Verification of android.view.View androidx.autofill.inline.v1.InlineSuggestionUi.render(android.content.Context, androidx.autofill.inline.v1.InlineSuggestionUi$Content, androidx.autofill.inline.v1.InlineSuggestionUi$Style) took 110.233ms (1242.82 bytecodes/s) (2584B approximate peak alloc)
+10-31 12:01:38.714   278   278 W Zygote  : Class not found for preloading: com.android.internal.telephony.-$$Lambda$SubscriptionController$VCQsMNqRHpN3RyoXYzh2YUwA2yc
+10-31 12:01:38.714   278   278 W Zygote  : Class not found for preloading: com.android.internal.telephony.-$$Lambda$SubscriptionController$u5xE-urXR6ElZ50305_6guo20Fc
+10-31 12:01:39.560   674   674 W dex2oat32: Verification of boolean com.google.common.collect.Iterators$PeekingImpl.hasNext() took 112.781ms (150.73 bytecodes/s) (1048B approximate peak alloc)
+10-31 12:01:40.155   278   278 W Zygote  : Class not found for preloading: com.android.internal.telephony.IccSmsInterfaceManager$2
+10-31 12:01:40.330   278   278 W Zygote  : Class not found for preloading: com.android.internal.widget.-$$Lambda$gPQuiuEDuOmrh2MixBcV6a5gu5s
+10-31 12:01:40.341   278   278 W Zygote  : Class not found for preloading: com.android.internal.widget.LockPatternUtils$2
+10-31 12:01:40.696   674   674 W dex2oat32: Compilation of byte[] com.google.android.textclassifier.AnnotatorModel.nativeLookUpKnowledgeEntity(long, java.lang.String) took 137.584ms
+10-31 12:01:40.894   278   278 I Zygote  : ...preloaded 12110 classes in 19637ms.
+10-31 12:01:40.898   278   278 I zygote  : VMRuntime.preloadDexCaches starting
+10-31 12:01:41.053   278   278 I zygote  : VMRuntime.preloadDexCaches strings total=418008 before=11374 after=11374
+10-31 12:01:41.053   278   278 I zygote  : VMRuntime.preloadDexCaches types total=40946 before=11206 after=11381
+10-31 12:01:41.054   278   278 I zygote  : VMRuntime.preloadDexCaches fields total=173619 before=14202 after=15086
+10-31 12:01:41.054   278   278 I zygote  : VMRuntime.preloadDexCaches methods total=315786 before=18080 after=18080
+10-31 12:01:41.061   278   278 I zygote  : VMRuntime.preloadDexCaches finished
+10-31 12:01:41.062   278   278 D ZygoteInitTiming_lazy: PreloadClasses took to complete: 19807ms
+10-31 12:01:41.149   278   278 I zygote  : The ClassLoaderContext is a special shared library.
+10-31 12:01:41.214   278   278 D ApplicationLoaders: Created zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+10-31 12:01:41.270   278   278 I zygote  : The ClassLoaderContext is a special shared library.
+10-31 12:01:41.297   278   278 D ApplicationLoaders: Created zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+10-31 12:01:41.340   278   278 I zygote  : The ClassLoaderContext is a special shared library.
+10-31 12:01:41.354   278   278 D ApplicationLoaders: Created zygote-cached class loader: /system/framework/android.test.base.jar
+10-31 12:01:41.354   278   278 D ZygoteInitTiming_lazy: CacheNonBootClasspathClassLoaders took to complete: 291ms
+10-31 12:01:41.359   278   278 I Zygote  : Preloading resources...
+10-31 12:01:41.610   278   278 W Resources: Preloaded drawable resource #0x108028b (android:drawable/dialog_background_material) that varies with configuration!!
+10-31 12:01:41.649   674   674 I dex2oat32: dex2oat took 9.077s (4.632s cpu) (threads: 2) arena alloc=1880B (1880B) java alloc=502KB (514064B) native alloc=1540KB (1577008B) free=1542KB (1579632B)
+10-31 12:01:41.750   411   444 V installd: DexInv: --- END '/apex/com.android.extservices/priv-app/ExtServices/ExtServices.apk' (success) ---
+10-31 12:01:42.017   278   278 I Zygote  : ...preloaded 64 resources in 657ms.
+10-31 12:01:42.081   527   527 W system_server: Long monitor contention with owner NetworkWatchlistService (666) at com.android.server.pm.PackageSetting com.android.server.pm.PackageManagerService.getPackageSettingInternal(java.lang.String, int)(PackageManagerService.java:25244) waiters=0 in int com.android.server.pm.PackageManagerService.performDexOptInternal(com.android.server.pm.dex.DexoptOptions) for 301ms
+10-31 12:01:42.112   278   278 I Zygote  : ...preloaded 41 resources in 94ms.
+10-31 12:01:42.112   278   278 D ZygoteInitTiming_lazy: PreloadResources took to complete: 757ms
+10-31 12:01:42.165   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:42.236   527   527 I chatty  : uid=1000(system) Binder:527_3 identical 1 line
+10-31 12:01:42.331   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:42.366   278   278 I Zygote  : Preloading shared libraries...
+10-31 12:01:42.386   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:42.518   527   527 I chatty  : uid=1000(system) Binder:527_3 identical 2 lines
+10-31 12:01:42.596   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:42.599   278   278 I Zygote  : Called ZygoteHooks.endPreload()
+10-31 12:01:42.610   278   278 I Zygote  : Installed AndroidKeyStoreProvider in 10ms.
+10-31 12:01:42.725   278   278 I Zygote  : Warmed up JCA providers in 114ms.
+10-31 12:01:42.725   278   278 D Zygote  : end preload
+10-31 12:01:42.731   527   607 D SystemServerTimingAsync: SecondaryZygotePreload took to complete: 22285ms
+10-31 12:01:42.731   527   607 D SystemServerInitThreadPool: Finished executing SecondaryZygotePreload
+10-31 12:01:42.732   527   607 D SystemServerTimingAsync: InitThreadPoolExec:SecondaryZygotePreload took to complete: 22287ms
+10-31 12:01:42.768   527   527 I system_server: The ClassLoaderContext is a special shared library.
+10-31 12:01:42.864   527   527 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /apex/com.android.permission/priv-app/PermissionController/PermissionController.apk pkg=com.android.permissioncontroller isa=x86_64 dexoptFlags=public targetFilter=quicken oatDir=null classLoaderContext=PCL[]{PCL[/system/framework/android.test.base.jar]}
+10-31 12:01:42.877   411   444 V installd: DexInv: --- BEGIN '/apex/com.android.permission/priv-app/PermissionController/PermissionController.apk' ---
+10-31 12:01:42.932   278   486 I zygote  : Background young concurrent copying GC freed 34245(1952KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 5068KB/6750KB, paused 7.245ms total 312.694ms
+10-31 12:01:43.226     0     0 D logd    : logdr: UID=2000 GID=2000 PID=683 n tail=100 logMask=99 pid=0 start=0ns timeout=0ns
