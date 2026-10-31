@@ -96,8 +96,8 @@ Rubrica do relatório: Teoria 3; lógica 3; funcionamento 2; relatório 2.
 
 |Relatório|Código desenvolvido|Compilação realizada|Aplicativo executado|Testes realizados|Prints reais|Capturas inseridas|Word gerado|PDF gerado|Pendências|Status|
 |---|---|---|---|---|---|---|---|---|---|---|
-|01|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; print real da IDE Android Studio e exploração da estrutura; executar e capturar emulador|parcialmente concluído|
-|02|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
+|01|sim|sim|sim|1 verificações de interface aprovadas|1|sim|sim|sim|Preencher identificação acadêmica; print real da IDE Android Studio e exploração da estrutura|parcialmente concluído|
+|02|sim|sim|sim|3 verificações de interface aprovadas|2|sim|sim|sim|Preencher identificação acadêmica|concluído (técnico); identificação a preencher|
 |03|sim|não|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; liberar storage.googleapis.com, instalar SDK, compilar, testar e capturar Flutter|parcialmente concluído|
 |04|sim|sim|não|não executados|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|
 |05|sim|sim|não|15 testes compartilhados de regras Java (R5/R7); interface não testada|0|não|sim|sim|Preencher identificação acadêmica; executar e capturar emulador|parcialmente concluído|

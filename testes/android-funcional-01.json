@@ -1,0 +1,11 @@
+{
+  "atividade": "01",
+  "plataforma": "Emulador Android API 30 x86_64, TCG sem KVM",
+  "testes": [
+    {
+      "esperado": "Olá! Meu primeiro aplicativo Android em Java e XML.",
+      "resultado": "aprovado",
+      "captura": "01-aplicativo.png"
+    }
+  ]
+}

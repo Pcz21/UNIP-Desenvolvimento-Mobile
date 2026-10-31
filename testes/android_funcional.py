@@ -60,7 +60,7 @@ class Android:
    self.abrir('PreferenciasActivity');self.verificar('Meu nome — armazenamento local')
    # Limpa apenas o campo, preservando o arquivo de preferências para a prova de reinício.
    self.clicar('nome');self.cmd('shell','input','keyevent','KEYCODE_MOVE_END')
-   for _ in range(30):self.cmd('shell','input','keyevent','KEYCODE_DEL')
+   self.cmd('shell','input','keyevent',*(['KEYCODE_DEL']*30))
    self.cmd('shell','input','text','Aluno%sUNIP');self.cmd('shell','input','keyevent','KEYCODE_BACK');self.clicar('salvar');self.verificar('Nome salvo: Aluno UNIP','01-salvo.png')
    self.abrir('PreferenciasActivity');self.verificar('Nome recuperado: Aluno UNIP','02-recuperado.png')
   elif n=='07':

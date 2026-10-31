@@ -1,0 +1,71 @@
+{
+  "documentos": [
+    {
+      "relatorio": "01",
+      "paginas_pdf": 2,
+      "imagens_originais": 1,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    },
+    {
+      "relatorio": "02",
+      "paginas_pdf": 3,
+      "imagens_originais": 2,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    },
+    {
+      "relatorio": "03",
+      "paginas_pdf": 3,
+      "imagens_originais": 0,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    },
+    {
+      "relatorio": "04",
+      "paginas_pdf": 3,
+      "imagens_originais": 0,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    },
+    {
+      "relatorio": "05",
+      "paginas_pdf": 3,
+      "imagens_originais": 0,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    },
+    {
+      "relatorio": "06",
+      "paginas_pdf": 3,
+      "imagens_originais": 0,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    },
+    {
+      "relatorio": "07",
+      "paginas_pdf": 3,
+      "imagens_originais": 0,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    },
+    {
+      "relatorio": "08",
+      "paginas_pdf": 3,
+      "imagens_originais": 0,
+      "imagens_docx_e_pdf": "conferidas",
+      "docx": "aberto por python-docx; pacote ZIP íntegro",
+      "pdf": "aberto por PyMuPDF"
+    }
+  ],
+  "consolidado_paginas": 24,
+  "verificacao": "aprovada",
+  "limite": "DOCX verificado estruturalmente, sem renderização no Microsoft Word; paginação visual deve ser revisada ao abrir no laboratório."
+}

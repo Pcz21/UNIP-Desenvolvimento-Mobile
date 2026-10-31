@@ -92,7 +92,11 @@
       ],
       [
         "p",
-        "ANDROID DEVELOPERS. Documentação para desenvolvedores Android. [S. l.], [s. d.]. Disponível em: https://developer.android.com/. Consulta on-line pendente de liberação de rede."
+        "ANDROID OPEN SOURCE PROJECT. EditText: código-fonte e documentação da API. [S. l.], [s. d.]. Disponível em: https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/master/core/java/android/widget/EditText.java. Acesso em: 31 out. 2026."
+      ],
+      [
+        "p",
+        "OWASP FOUNDATION. Authentication cheat sheet. [S. l.], [s. d.]. Disponível em: https://raw.githubusercontent.com/OWASP/CheatSheetSeries/master/cheatsheets/Authentication_Cheat_Sheet.md. Acesso em: 31 out. 2026."
       ]
     ]
   ]

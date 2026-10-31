@@ -1,0 +1,44 @@
+{
+  "flutter_widgets": {
+    "url": "https://raw.githubusercontent.com/flutter/flutter/stable/packages/flutter/lib/src/widgets/framework.dart",
+    "http": 200,
+    "bytes": 308060,
+    "consulta": "2026-10-31"
+  },
+  "dart_overview": {
+    "url": "https://raw.githubusercontent.com/dart-lang/site-www/main/src/content/overview.md",
+    "http": 200,
+    "bytes": 11363,
+    "consulta": "2026-10-31"
+  },
+  "android_activity": {
+    "url": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/master/core/java/android/app/Activity.java",
+    "http": 200,
+    "bytes": 441949,
+    "consulta": "2026-10-31"
+  },
+  "android_checkbox": {
+    "url": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/master/core/java/android/widget/CheckBox.java",
+    "http": 200,
+    "bytes": 2471,
+    "consulta": "2026-10-31"
+  },
+  "android_prefs": {
+    "url": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/master/core/java/android/content/SharedPreferences.java",
+    "http": 200,
+    "bytes": 17429,
+    "consulta": "2026-10-31"
+  },
+  "owasp_auth": {
+    "url": "https://raw.githubusercontent.com/OWASP/CheatSheetSeries/master/cheatsheets/Authentication_Cheat_Sheet.md",
+    "http": 200,
+    "bytes": 41242,
+    "consulta": "2026-10-31"
+  },
+  "android_edittext": {
+    "url": "https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/master/core/java/android/widget/EditText.java",
+    "http": 200,
+    "bytes": 11192,
+    "consulta": "2026-10-31"
+  }
+}

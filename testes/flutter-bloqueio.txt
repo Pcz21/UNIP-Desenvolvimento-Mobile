@@ -1,0 +1,6 @@
+Operação tentada: leitura do manifesto oficial para instalar Flutter.
+URL: https://storage.googleapis.com/flutter_infra_release/flutter/releases/releases_linux.json
+Resultado observado no proxy HTTPS: URLError: Tunnel connection failed: 403 Forbidden.
+A configuração em execução reportou spec_revision=1 e allowed_hosts personalizados vazios após salvar o rascunho.
+Consequência: SDK Flutter não instalado; analyze, testes e build não executados.
+Os domínios necessários foram salvos no rascunho; salvar o rascunho não aplica nem publica a política.

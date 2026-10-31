@@ -1,0 +1,21 @@
+{
+  "atividade": "02",
+  "plataforma": "Emulador Android API 30 x86_64, TCG sem KVM",
+  "testes": [
+    {
+      "esperado": "Portal UNIP — Login",
+      "resultado": "aprovado",
+      "captura": "01-login.png"
+    },
+    {
+      "esperado": "Preencha e-mail e senha.",
+      "resultado": "aprovado",
+      "captura": null
+    },
+    {
+      "esperado": "Demonstração local, sem autenticação.",
+      "resultado": "aprovado",
+      "captura": "02-interacao.png"
+    }
+  ]
+}

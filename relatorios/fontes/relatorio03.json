@@ -96,11 +96,11 @@
       ],
       [
         "p",
-        "FLUTTER. Flutter documentation. [S. l.], [s. d.]. Disponível em: https://docs.flutter.dev/. Consulta on-line pendente de liberação de rede."
+        "FLUTTER. Framework library: widgets e ciclo de vida. [S. l.], [s. d.]. Disponível em: https://raw.githubusercontent.com/flutter/flutter/stable/packages/flutter/lib/src/widgets/framework.dart. Acesso em: 31 out. 2026."
       ],
       [
         "p",
-        "DART. Dart overview. [S. l.], [s. d.]. Disponível em: https://dart.dev/overview. Consulta on-line pendente de liberação de rede."
+        "DART. Dart overview. [S. l.], [s. d.]. Disponível em: https://raw.githubusercontent.com/dart-lang/site-www/main/src/content/overview.md. Acesso em: 31 out. 2026."
       ]
     ]
   ]
